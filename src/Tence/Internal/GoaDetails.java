@@ -8,6 +8,7 @@ public class GoaDetails {
         place.Location();
         place.Nature();
         place.OffRoad();
+
         if(place instanceof Goa)
         {
             Goa goa =(Goa)place;

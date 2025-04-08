@@ -31,6 +31,7 @@ public class MainRunner {
         goa.Party();
         goa.Nightout();
         goa.Massage();
+        
         System.out.println("");
         Place place1 = new Place();
         Goa goa1 = new Goa();
