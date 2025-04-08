@@ -20,6 +20,7 @@ public class Kedarnath extends Place {
         public void Method5() {
             System.out.println("Method5");
         }
+
         public void God(){
             System.out.println("God in kedarnath");
         }

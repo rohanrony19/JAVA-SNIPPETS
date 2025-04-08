@@ -8,6 +8,7 @@ public class KedarnathDetails {
             place.Location();
             place.Nature();
             place.OffRoad();
+
             if (place instanceof Kedarnath) {
                 Kedarnath kedarnath = (Kedarnath) place;
                 kedarnath.God();

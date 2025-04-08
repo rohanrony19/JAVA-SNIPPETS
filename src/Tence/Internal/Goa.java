@@ -21,6 +21,7 @@ public class Goa extends Place {
         public void Massage(){
             System.out.println("Bunga-Bunga");
         }
+
         public void loction()
         {
             System.out.println("Goa Location");
