@@ -5,6 +5,7 @@ public class Goa extends Place {
         super();
         System.out.println("No args Goa constructor");
         }
+
         public void Beach(){
             System.out.println("Goa has a Beach");
         }
@@ -19,6 +20,10 @@ public class Goa extends Place {
         }
         public void Massage(){
             System.out.println("Bunga-Bunga");
+        }
+        public void loction()
+        {
+            System.out.println("Goa Location");
         }
 
 
