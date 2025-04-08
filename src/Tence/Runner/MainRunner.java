@@ -31,6 +31,11 @@ public class MainRunner {
         goa.Party();
         goa.Nightout();
         goa.Massage();
+        System.out.println("");
+        Place place1 = new Place();
+        Goa goa1 = new Goa();
+        GoaDetails goaDetails = new GoaDetails();
+        goaDetails.details(goa1);
 
         Kedarnath kedarnath = new Kedarnath();
         kedarnath.Method1();
@@ -38,6 +43,12 @@ public class MainRunner {
         kedarnath.Method3();
         kedarnath.Method4();
         kedarnath.Method5();
+
+        System.out.println("");
+        Place place2 = new Place();
+        Kedarnath kedarnath1 = new Kedarnath();
+        KedarnathDetails kedarnathDetails = new KedarnathDetails();
+        kedarnathDetails.detail(kedarnath1);
 
         ladakh.Lake();
         ladakh.Location();
