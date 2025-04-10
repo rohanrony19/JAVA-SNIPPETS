@@ -15,11 +15,17 @@ public class SoulMate extends Book {
     }
 
     @Override
+    public int hashCode() {
+        System.out.println("Default :" +super.hashCode());
+        return 83;
+    }
+
+    @Override
     public String toString() {
-        return "SoulMate{" +
+        return
                 "name='" + name + '\'' +
-                ", category='" + category + '\'' +
-                ", price=" + price +
-                '}';
+                        ", category='" + category + '\'' +
+                        ", price=" + price
+                ;
     }
 }

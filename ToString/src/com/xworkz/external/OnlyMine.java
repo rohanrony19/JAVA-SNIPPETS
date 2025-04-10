@@ -15,11 +15,17 @@ public class OnlyMine extends Book {
     }
 
     @Override
+    public int hashCode() {
+        System.out.println("Default :" +super.hashCode());
+        return 72;
+    }
+
+    @Override
     public String toString() {
-        return "OnlyMine{" +
+        return
                 "name='" + name + '\'' +
-                ", category='" + category + '\'' +
-                ", price=" + price +
-                '}';
+                        ", category='" + category + '\'' +
+                        ", price=" + price
+                ;
     }
 }

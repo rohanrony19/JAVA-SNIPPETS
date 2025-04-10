@@ -15,11 +15,17 @@ public class Dearlove extends Book {
     }
 
     @Override
+    public int hashCode() {
+        System.out.println("Default :" +super.hashCode());
+        return 9;
+    }
+
+    @Override
     public String toString() {
-        return "Dearlove{" +
+        return
                 "name='" + name + '\'' +
-                ", category='" + category + '\'' +
-                ", price=" + price +
-                '}';
+                        ", category='" + category + '\'' +
+                        ", price=" + price
+                ;
     }
 }

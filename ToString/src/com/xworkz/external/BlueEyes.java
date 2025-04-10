@@ -15,11 +15,17 @@ public class BlueEyes extends Book {
     }
 
     @Override
+    public int hashCode() {
+        System.out.println("Default :" +super.hashCode());
+        return 4;
+    }
+
+    @Override
     public String toString() {
-        return "BlueEyes{" +
+        return
                 "name='" + name + '\'' +
-                ", category='" + category + '\'' +
-                ", price=" + price +
-                '}';
+                        ", category='" + category + '\'' +
+                        ", price=" + price
+                ;
     }
 }

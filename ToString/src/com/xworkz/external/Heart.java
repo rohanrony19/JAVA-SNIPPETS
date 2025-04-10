@@ -15,11 +15,17 @@ public class Heart extends Book {
     }
 
     @Override
+    public int hashCode() {
+        System.out.println("Default :" +super.hashCode());
+        return 24;
+    }
+
+    @Override
     public String toString() {
-        return "Heart{" +
+        return
                 "name='" + name + '\'' +
-                ", category='" + category + '\'' +
-                ", price=" + price +
-                '}';
+                        ", category='" + category + '\'' +
+                        ", price=" + price
+                ;
     }
 }

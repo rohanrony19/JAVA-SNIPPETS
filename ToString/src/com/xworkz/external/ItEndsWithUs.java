@@ -13,13 +13,18 @@ public class ItEndsWithUs extends Book {
         this.price=price;
 
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default :" +super.hashCode());
+        return 40;
+    }
 
     @Override
     public String toString() {
-        return "ItEndsWithUs{" +
+        return
                 "name='" + name + '\'' +
                 ", category='" + category + '\'' +
-                ", price=" + price +
-                '}';
+                ", price=" + price
+                ;
     }
 }

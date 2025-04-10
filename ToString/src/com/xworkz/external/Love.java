@@ -15,11 +15,17 @@ public class Love extends Book {
     }
 
     @Override
+    public int hashCode() {
+        System.out.println("manual :"+super.hashCode());
+        return 50;
+    }
+
+    @Override
     public String toString() {
-        return "Love{" +
+        return
                 "name='" + name + '\'' +
                 ", category='" + category + '\'' +
-                ", price=" + price +
-                '}';
+                ", price=" + price
+                ;
     }
 }

@@ -15,6 +15,12 @@ public class LoveAgain extends Book {
     }
 
     @Override
+    public int hashCode() {
+        System.out.println("Default :" +super.hashCode());
+        return 51;
+    }
+
+    @Override
     public String toString() {
         return "LoveAgain{" +
                 "name='" + name + '\'' +

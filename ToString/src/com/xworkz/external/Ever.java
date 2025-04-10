@@ -13,13 +13,18 @@ public class Ever extends Book {
         this.price=price;
 
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default :" +super.hashCode());
+        return 16;
+    }
 
     @Override
     public String toString() {
-        return "Ever{" +
+        return
                 "name='" + name + '\'' +
                 ", category='" + category + '\'' +
-                ", price=" + price +
-                '}';
+                ", price=" + price
+                ;
     }
 }

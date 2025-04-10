@@ -13,13 +13,18 @@ public class Itstartswithus extends Book {
         this.price=price;
 
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default :" +super.hashCode());
+        return 41;
+    }
 
     @Override
     public String toString() {
-        return "Itstartswithus{" +
+        return
                 "name='" + name + '\'' +
                 ", category='" + category + '\'' +
-                ", price=" + price +
-                '}';
+                ", price=" + price
+                ;
     }
 }

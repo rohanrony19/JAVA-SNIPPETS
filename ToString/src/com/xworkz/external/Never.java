@@ -15,11 +15,17 @@ public class Never extends Book {
     }
 
     @Override
+    public int hashCode() {
+        System.out.println("Default: "+super.hashCode());
+        return 63;
+    }
+
+    @Override
     public String toString() {
-        return "Never{" +
-                "name='" + name + '\'' +
-                ", category='" + category + '\'' +
-                ", price=" + price +
-                '}';
+        return
+                "name='" + name +
+                ", category='" + category + '\''+
+                ", price=" + price +'\''
+                ;
     }
 }
