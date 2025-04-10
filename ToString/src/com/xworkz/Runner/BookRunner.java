@@ -215,5 +215,192 @@ public class BookRunner {
         YouandMe youandMe=new YouandMe("You and Me","Connection",700);
         System.out.println(youandMe);
 
+        System.out.println("");
+        SweetVibe sweetVibe=new SweetVibe("Sweat Vibe","Vibe",400);
+        System.out.println(sweetVibe);
+
+        System.out.println("");
+        HoldTight holdTight=new HoldTight("Hold Tight","Ceremony",650);
+        System.out.println(holdTight);
+
+        System.out.println("");
+        Runtoyou runtoyou=new Runtoyou("Run To You","Fellowship",400);
+        System.out.println(runtoyou);
+
+        System.out.println("");
+        Heart heart=new Heart("Heart","Biological",800);
+        System.out.println(heart);
+
+        System.out.println("");
+        Heartless heartless=new Heartless("Heart Less","Sad",850);
+        System.out.println(heartless);
+
+        System.out.println("");
+        HeartSong heartSong=new HeartSong("Heart Song","Music",1500);
+        System.out.println(heartSong);
+
+        System.out.println("");
+        YouSaid youSaid=new YouSaid("You said","Storytell",700);
+        System.out.println(youSaid);
+
+        System.out.println("");
+        WarmKiss warmKiss=new WarmKiss("Warm Kiss","Kissing",1200);
+        System.out.println(warmKiss);
+
+        System.out.println("");
+        TwoHearts twoHearts=new TwoHearts("Two Hearts","Connection",800);
+        System.out.println(twoHearts);
+
+        System.out.println("");
+        ThisLove thisLove=new ThisLove("This Love","Love",800);
+        System.out.println(thisLove);
+
+        System.out.println("");
+        OnlyLove onlyLove =new OnlyLove("Only Love","Love",700);
+        System.out.println(onlyLove);
+
+        System.out.println("");
+        Stiilmine stiilmine=new Stiilmine("Still Mine","Endless",5000);
+        System.out.println(stiilmine);
+
+        System.out.println("");
+        SoulTouch soulTouch=new SoulTouch("Soul Touch","Souls",500);
+        System.out.println(soulTouch);
+
+        System.out.println("");
+        Soul soul=new Soul("Soul","Mannasu",750);
+        System.out.println(soul);
+
+        System.out.println("");
+        SoftTouch softTouch=new SoftTouch("Soft Touch","Touchy",400);
+        System.out.println(softTouch);
+
+        System.out.println("");
+        Silentlove silentlove=new Silentlove("Silent Love","Silent story",850);
+        System.out.println(silentlove);
+
+        System.out.println("");
+        SecretLove secretLove=new SecretLove("Secret Heart","Heartly",900);
+        System.out.println(secretLove);
+
+        System.out.println("");
+        Secret secret=new Secret("Secret","Scary",600);
+        System.out.println(secret);
+
+        System.out.println("");
+        SayYes sayYes=new SayYes("Say Yes","Fake Story",200);
+        System.out.println(sayYes);
+
+        System.out.println("");
+        OpenHeart openHeart=new OpenHeart("Open Heart","Heartly",900);
+        System.out.println(openHeart);
+
+        System.out.println("");
+        OneWord oneWord=new OneWord("Only Word","Word",950);
+        System.out.println(oneWord);
+
+        System.out.println("");
+        Nowords nowords=new Nowords("No Words","Wordless",650);
+        System.out.println(nowords);
+
+        System.out.println("");
+        Newstart newstart=new Newstart("New Start","Starting",400);
+        System.out.println(newstart);
+
+        System.out.println("");
+        MyCrush myCrush=new MyCrush("My Crush","School Story",400);
+        System.out.println(myCrush);
+
+        System.out.println("");
+        MyBoo myBoo=new MyBoo("My Boo","Caring",700);
+        System.out.println(myBoo);
+
+        System.out.println("");
+        MeAndYou meAndYou=new MeAndYou("Me and You","Lovestory",8000);
+        System.out.println(meAndYou);
+
+        System.out.println("");
+        LoveWins loveWins=new LoveWins("Love Wins","War",500);
+        System.out.println(loveWins);
+
+        System.out.println("");
+        LoveAgain loveAgain=new LoveAgain("Love Again","Over Possessive",600);
+        System.out.println(loveAgain);
+
+        System.out.println("");
+        LostAndFound lostAndFound=new LostAndFound("Lost and Found","Thrilling",800);
+        System.out.println(lostAndFound);
+
+        System.out.println("");
+        Latelove latelove=new Latelove("Late Love","Love Story",300);
+        System.out.println(latelove);
+
+        System.out.println("");
+        LastCall lastCall=new LastCall("Last Call","Sad",400);
+        System.out.println(lastCall);
+
+        System.out.println("");
+        HisVoice hisVoice=new HisVoice("His Voice","Imaginination",800);
+        System.out.println(hisVoice);
+
+        System.out.println("");
+        HisSmile hisSmile=new HisSmile("His Smile","Imagine",400);
+        System.out.println(hisSmile);
+
+        System.out.println("");
+        HisEyes hisEyes=new HisEyes("His Eyes","Care",300);
+        System.out.println(hisEyes);
+
+        System.out.println("");
+        HerVoice herVoice=new HerVoice("Her Voice","Imagine",500);
+        System.out.println(herVoice);
+
+        System.out.println("");
+        HerTouch herTouch=new HerTouch("Her Touch","Tempting",7000);
+        System.out.println(herTouch);
+
+        System.out.println("");
+        HerSmile herSmile=new HerSmile("Her Smile","Attraction",400);
+        System.out.println(herSmile);
+
+        System.out.println("");
+        HerEyes herEyes=new HerEyes("Her Eyes","Distraction",400);
+        System.out.println(herEyes);
+
+        System.out.println("");
+        Founduh founduh=new Founduh("Found Uh","Searching",500);
+        System.out.println(founduh);
+
+        System.out.println("");
+        ForYou forYou=new ForYou("For You","Care",900);
+        System.out.println(forYou);
+
+        System.out.println("");
+        FirstSight firstSight=new FirstSight("First Sight","Thrilling",700);
+        System.out.println(firstSight);
+
+        System.out.println("");
+        DreamGirl dreamGirl=new DreamGirl("Dream Girl","Dreaming",500);
+        System.out.println(dreamGirl);
+
+        System.out.println("");
+        Dream dream=new Dream("Dream","Dreaming",500);
+        System.out.println(dream);
+
+        System.out.println("");
+        DearYou dearYou=new DearYou("Dear You","Horror",400);
+        System.out.println(dearYou);
+
+        System.out.println("");
+        BlueEyes blueEyes=new BlueEyes("Blue Eyes","Attractive",600);
+        System.out.println(blueEyes);
+
+        System.out.println("");
+        Dearuh dearuh=new Dearuh("Dear Uh","Missing",300);
+        System.out.println(dearuh);
+
+        System.out.println("");
+        Allyours allyours=new Allyours("All Yours","Love Story",500);
+        System.out.println(allyours);
     }
 }
