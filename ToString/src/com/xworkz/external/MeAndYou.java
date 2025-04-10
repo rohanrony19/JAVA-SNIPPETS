@@ -14,12 +14,19 @@ public class MeAndYou extends Book {
 
     }
 
+
+    @Override
+    public int hashCode() {
+        System.out.println("Default :" +super.hashCode());
+        return 57;
+    }
+
     @Override
     public String toString() {
-        return "MeAndYou{" +
+        return
                 "name='" + name + '\'' +
-                ", category='" + category + '\'' +
-                ", price=" + price +
-                '}';
+                        ", category='" + category + '\'' +
+                        ", price=" + price
+                ;
     }
 }

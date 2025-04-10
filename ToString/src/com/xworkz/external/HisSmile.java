@@ -13,13 +13,17 @@ public class HisSmile extends Book {
         this.price=price;
 
     }
+    public int hashcode(){
+        System.out.println(super.hashCode());
+        return 33;
+    }
 
     @Override
     public String toString() {
-        return "HisSmile{" +
-                "name='" + name + '\'' +
-                ", category='" + category + '\'' +
-                ", price=" + price +
-                '}';
+        return
+                "name='" + name +
+                ", category='" + category +
+                ", price=" + price
+                ;
     }
 }
