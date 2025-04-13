@@ -28,4 +28,18 @@ public class SecretLove extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof SecretLove) {
+                SecretLove secretLove = this;
+                SecretLove secretLove1 = (SecretLove) obj;
+                if (secretLove.name.equals(secretLove1.name) && secretLove.category.equals(secretLove1.category) && secretLove.price == secretLove1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

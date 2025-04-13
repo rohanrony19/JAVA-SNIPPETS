@@ -28,4 +28,18 @@ public class YouandMe extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof YouandMe) {
+                YouandMe youandMe = this;
+                YouandMe youandMe1 = (YouandMe) obj;
+                if (youandMe.name.equals(youandMe1.name) && youandMe.category.equals(youandMe1.category) && youandMe.price == youandMe1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

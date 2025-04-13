@@ -28,4 +28,18 @@ public class SoulTouch extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof SoulTouch) {
+                SoulTouch soulTouch = this;
+                SoulTouch soulTouch1 = (SoulTouch) obj;
+                if (soulTouch.name.equals(soulTouch1.name) && soulTouch.category.equals(soulTouch1.category) && soulTouch.price == soulTouch1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

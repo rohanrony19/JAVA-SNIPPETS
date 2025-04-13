@@ -28,4 +28,18 @@ public class SweetVibe extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof SweetVibe) {
+                SweetVibe sweetVibe = this;
+                SweetVibe sweetVibe1 = (SweetVibe) obj;
+                if (sweetVibe.name.equals(sweetVibe1.name) && sweetVibe.category.equals(sweetVibe1.category) && sweetVibe.price == sweetVibe1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

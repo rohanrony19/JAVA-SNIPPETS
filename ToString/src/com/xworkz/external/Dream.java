@@ -28,4 +28,18 @@ public class Dream extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Warmth) {
+                Dream dream = this;
+                Dream dream1 = (Dream) obj;
+                if (dream.name.equals(dream.name) && dream.category.equals(dream1.category) && dream.price == dream1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

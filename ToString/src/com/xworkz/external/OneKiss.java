@@ -28,4 +28,18 @@ public class OneKiss extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof OneKiss) {
+                OneKiss oneKiss = this;
+                OneKiss oneKiss1 = (OneKiss) obj;
+                if (oneKiss.name.equals(oneKiss1.name) && oneKiss.category.equals(oneKiss1.category) && oneKiss.price == oneKiss1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

@@ -28,4 +28,18 @@ public class Mine extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Mine) {
+                Mine mine = this;
+                Mine mine1 = (Mine) obj;
+                if (mine.name.equals(mine1.name) && mine.category.equals(mine1.category) && mine.price == mine1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

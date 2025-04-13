@@ -28,4 +28,18 @@ public class Forever extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Forever) {
+                Forever forever = this;
+                Forever forever1 = (Forever) obj;
+                if (forever.name.equals(forever1.name) && forever.category.equals(forever1.category) && forever.price == forever1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

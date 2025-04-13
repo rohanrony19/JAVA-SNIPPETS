@@ -27,4 +27,18 @@ public class Ever extends Book {
                 ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Ever) {
+                Ever ever = this;
+                Ever ever1 = (Ever) obj;
+                if (ever.name.equals(ever1.name) && ever.category.equals(ever1.category) && ever.price == ever1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

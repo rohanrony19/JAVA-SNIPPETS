@@ -28,4 +28,18 @@ public class EndlessLove extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof EndlessLove) {
+                EndlessLove endlessLove = this;
+                EndlessLove endlessLove1 = (EndlessLove) obj;
+                if (endlessLove.name.equals(endlessLove1.name) && endlessLove.category.equals(endlessLove1.category) && endlessLove.price == endlessLove1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

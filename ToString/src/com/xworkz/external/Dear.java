@@ -27,5 +27,18 @@ public class Dear extends Book {
                         ", category='" + category + '\'' +
                         ", price=" + price
                 ;
+    }@Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Dear) {
+                Dear dear = this;
+                Dear dear1 = (Dear) obj;
+                if (dear.name.equals(dear1.name) && dear.category.equals(dear1.category) && dear.price == dear1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
     }
 }

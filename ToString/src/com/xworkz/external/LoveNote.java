@@ -28,4 +28,18 @@ public class LoveNote extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof LoveNote) {
+                LoveNote loveNote = this;
+                LoveNote loveNote1 = (LoveNote) obj;
+                if (loveNote.name.equals(loveNote1.name) && loveNote.category.equals(loveNote1.category) && loveNote.price == loveNote1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

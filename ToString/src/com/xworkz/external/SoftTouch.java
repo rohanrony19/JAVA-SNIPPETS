@@ -28,4 +28,18 @@ public class SoftTouch extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof SoftTouch) {
+                SoftTouch softTouch = this;
+                SoftTouch softTouch1 = (SoftTouch) obj;
+                if (softTouch.name.equals(softTouch1.name) && softTouch.category.equals(softTouch1.category) && softTouch.price == softTouch1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

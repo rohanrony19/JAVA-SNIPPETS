@@ -28,4 +28,18 @@ public class HerVoice extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof HerVoice) {
+                HerVoice herVoice = this;
+                HerVoice herVoice1 = (HerVoice) obj;
+                if (herVoice.name.equals(herVoice1.name) && herVoice.category.equals(herVoice1.category) && herVoice.price == herVoice1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

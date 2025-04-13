@@ -28,4 +28,18 @@ public class WarmHug extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof WarmHug) {
+                WarmHug warmHug = this;
+                WarmHug warmHug1 = (WarmHug) obj;
+                if (warmHug.name.equals(warmHug1.name) && warmHug.category.equals(warmHug1.category) && warmHug.price == warmHug1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

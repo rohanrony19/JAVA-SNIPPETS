@@ -28,4 +28,18 @@ public class KissMe extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof KissMe) {
+                KissMe kissMe = this;
+                KissMe kissMe1 = (KissMe) obj;
+                if (kissMe.name.equals(kissMe1.name) && kissMe.category.equals(kissMe1.category) && kissMe.price == kissMe1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

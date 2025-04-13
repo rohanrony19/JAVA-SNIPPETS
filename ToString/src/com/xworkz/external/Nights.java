@@ -28,4 +28,18 @@ public class Nights extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Nights) {
+                Nights nights = this;
+                Nights nights1 = (Nights) obj;
+                if (nights.name.equals(nights1.name) && nights.category.equals(nights1.category) && nights.price == nights1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

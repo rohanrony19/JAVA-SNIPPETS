@@ -28,4 +28,18 @@ public class FirstSight extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof FirstSight) {
+                FirstSight firstSight = this;
+                FirstSight firstSight1 = (FirstSight) obj;
+                if (firstSight.name.equals(firstSight1.name) && firstSight.category.equals(firstSight1.category) && firstSight.price == firstSight1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

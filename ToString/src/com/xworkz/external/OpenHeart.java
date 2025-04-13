@@ -28,4 +28,18 @@ public class OpenHeart extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof OpenHeart) {
+                OpenHeart openHeart = this;
+                OpenHeart openHeart1 = (OpenHeart) obj;
+                if (openHeart.name.equals(openHeart1.name) && openHeart.category.equals(openHeart1.category) && openHeart.price == openHeart1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

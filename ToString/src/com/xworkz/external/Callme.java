@@ -28,4 +28,18 @@ public class Callme extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Callme) {
+                Callme callme = this;
+                Callme callme1 = (Callme) obj;
+                if (callme.name.equals(callme1.name) && callme.category.equals(callme1.category) && callme.price == callme1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

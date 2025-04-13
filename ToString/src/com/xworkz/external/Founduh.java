@@ -28,4 +28,18 @@ public class Founduh extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Founduh) {
+                Founduh founduh = this;
+                Founduh founduh1 = (Founduh) obj;
+                if (founduh.name.equals(founduh1.name) && founduh.category.equals(founduh1.category) && founduh.price == founduh1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

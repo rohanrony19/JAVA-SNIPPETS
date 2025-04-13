@@ -28,4 +28,18 @@ public class Onechance extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Onechance) {
+                Onechance onechance = this;
+                Onechance onechance1 = (Onechance) obj;
+                if (onechance.name.equals(onechance1.name) && onechance.category.equals(onechance1.category) && onechance.price == onechance1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

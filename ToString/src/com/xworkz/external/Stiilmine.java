@@ -28,4 +28,18 @@ public class Stiilmine extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Stiilmine) {
+                Stiilmine stiilmine = this;
+                Stiilmine stiilmine1 = (Stiilmine) obj;
+                if (stiilmine.name.equals(stiilmine1.name) && stiilmine.category.equals(stiilmine1.category) && stiilmine.price == stiilmine1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

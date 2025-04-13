@@ -27,4 +27,19 @@ public class Warmth extends Book {
                 ", price=" + price
                 ;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!=null){
+            if (obj instanceof Warmth){
+                Warmth warmth=this;
+                Warmth warmth1=(Warmth) obj;
+                if (warmth.name.equals(warmth1.name) && warmth.category.equals(warmth1.category) && warmth.price==warmth1.price){
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

@@ -29,4 +29,18 @@ public class MyCrush extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof MyCrush) {
+                MyCrush myCrush = this;
+                MyCrush myCrush1 = (MyCrush) obj;
+                if (myCrush.name.equals(myCrush1.name) && myCrush.category.equals(myCrush1.category) && myCrush.price == myCrush1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

@@ -28,4 +28,18 @@ public class Always extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Always) {
+                Always always = this;
+                Always always1 = (Always) obj;
+                if (always.name.equals(always1.name) && always.category.equals(always1.category) && always.price == always1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

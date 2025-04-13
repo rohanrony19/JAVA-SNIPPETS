@@ -28,4 +28,18 @@ public class Soul extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Soul) {
+                Soul soul = this;
+                Soul soul1 = (Soul) obj;
+                if (soul.name.equals(soul1.name) && soul.category.equals(soul1.category) && soul.price == soul1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

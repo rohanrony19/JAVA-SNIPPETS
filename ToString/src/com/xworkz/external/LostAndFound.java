@@ -28,4 +28,18 @@ public class LostAndFound extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof LostAndFound) {
+                LostAndFound lostAndFound = this;
+                LostAndFound lostAndFound1 = (LostAndFound) obj;
+                if (lostAndFound.name.equals(lostAndFound1.name) && lostAndFound.category.equals(lostAndFound1.category) && lostAndFound.price == lostAndFound1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

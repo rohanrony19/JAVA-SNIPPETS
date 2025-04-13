@@ -28,4 +28,18 @@ public class Newstart extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Newstart) {
+                Newstart newstart = this;
+                Newstart newstart1 = (Newstart) obj;
+                if (newstart.name.equals(newstart1.name) && newstart.category.equals(newstart1.category) && newstart.price == newstart1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

@@ -28,4 +28,18 @@ public class Nowords extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Nowords) {
+                Nowords nowords = this;
+                Nowords nowords1 = (Nowords) obj;
+                if (nowords.name.equals(nowords1.name) && nowords.category.equals(nowords1.category) && nowords.price == nowords1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

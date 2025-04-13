@@ -28,4 +28,18 @@ public class CrazyLove extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof CrazyLove) {
+                CrazyLove crazyLove = this;
+                CrazyLove crazyLove1 = (CrazyLove) obj;
+                if (crazyLove.name.equals(crazyLove1.name) && crazyLove.category.equals(crazyLove1.category) && crazyLove.price == crazyLove1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

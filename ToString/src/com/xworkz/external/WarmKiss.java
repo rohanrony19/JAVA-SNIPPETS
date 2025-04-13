@@ -28,4 +28,18 @@ public class WarmKiss extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof WarmKiss) {
+                WarmKiss warmKiss = this;
+                WarmKiss warmKiss1 = (WarmKiss) obj;
+                if (warmKiss.name.equals(warmKiss1.name) && warmKiss.category.equals(warmKiss1.category) && warmKiss.price == warmKiss1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

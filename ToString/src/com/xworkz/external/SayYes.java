@@ -28,4 +28,18 @@ public class SayYes extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof SayYes) {
+                SayYes sayYes = this;
+                SayYes sayYes1 = (SayYes) obj;
+                if (sayYes.name.equals(sayYes1.name) && sayYes.category.equals(sayYes1.category) && sayYes.price == sayYes1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }
