@@ -28,4 +28,18 @@ public class DayDream extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof DayDream) {
+                DayDream dayDream = this;
+                DayDream dayDream1 = (DayDream) obj;
+                if (dayDream.name.equals(dayDream1.name) && dayDream.category.equals(dayDream1.category) && dayDream.price == dayDream1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

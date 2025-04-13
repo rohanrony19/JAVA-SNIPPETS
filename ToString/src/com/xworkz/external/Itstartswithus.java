@@ -27,4 +27,18 @@ public class Itstartswithus extends Book {
                 ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Itstartswithus) {
+                Itstartswithus itstartswithus = this;
+                Itstartswithus itstartswithus1 = (Itstartswithus) obj;
+                if (itstartswithus.name.equals(itstartswithus1.name) && itstartswithus.category.equals(itstartswithus1.category) && itstartswithus.price == itstartswithus1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

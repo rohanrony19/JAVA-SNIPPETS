@@ -28,4 +28,18 @@ public class HeartBeat extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof HeartBeat) {
+                HeartBeat heartBeat = this;
+                HeartBeat heartBeat1 = (HeartBeat) obj;
+                if (heartBeat.name.equals(heartBeat1.name) && heartBeat.category.equals(heartBeat1.category) && heartBeat.price == heartBeat1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

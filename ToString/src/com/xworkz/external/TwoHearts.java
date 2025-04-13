@@ -28,4 +28,18 @@ public class TwoHearts extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof TwoHearts) {
+                TwoHearts twoHearts = this;
+                TwoHearts twoHearts1 = (TwoHearts) obj;
+                if (twoHearts.name.equals(twoHearts1.name) && twoHearts.category.equals(twoHearts1.category) && twoHearts.price == twoHearts1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

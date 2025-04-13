@@ -28,4 +28,18 @@ public class HoldMe extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof HoldMe) {
+                HoldMe holdMe = this;
+                HoldMe holdMe1 = (HoldMe) obj;
+                if (holdMe.name.equals(holdMe1.name) && holdMe.category.equals(holdMe1.category) && holdMe.price == holdMe1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

@@ -27,4 +27,18 @@ public class Lost extends Book {
                 ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Lost) {
+                Lost lost = this;
+                Lost lost1 = (Lost) obj;
+                if (lost.name.equals(lost1.name) && lost.category.equals(lost1.category) && lost.price == lost1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

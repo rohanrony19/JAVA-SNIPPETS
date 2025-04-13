@@ -28,4 +28,18 @@ public class SweaterWeather extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof SweaterWeather) {
+                SweaterWeather sweaterWeather = this;
+                SweaterWeather sweaterWeather1 = (SweaterWeather) obj;
+                if (sweaterWeather.name.equals(sweaterWeather1.name) && sweaterWeather.category.equals(sweaterWeather1.category) && sweaterWeather.price == sweaterWeather1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

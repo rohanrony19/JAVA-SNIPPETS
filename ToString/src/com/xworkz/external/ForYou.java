@@ -28,4 +28,18 @@ public class ForYou extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof ForYou) {
+                ForYou forYou = this;
+                ForYou forYou1 = (ForYou) obj;
+                if (forYou.name.equals(forYou1.name) && forYou.category.equals(forYou1.category) && forYou.price == forYou1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

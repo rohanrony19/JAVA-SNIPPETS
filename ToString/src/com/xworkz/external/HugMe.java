@@ -28,4 +28,18 @@ public class HugMe extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof HugMe) {
+                HugMe hugMe = this;
+                HugMe hugMe1 = (HugMe) obj;
+                if (hugMe.name.equals(hugMe1.name) && hugMe.category.equals(hugMe1.category) && hugMe.price == hugMe1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

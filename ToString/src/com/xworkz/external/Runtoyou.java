@@ -28,4 +28,18 @@ public class Runtoyou extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Runtoyou) {
+                Runtoyou runtoyou = this;
+                Runtoyou runtoyou1 = (Runtoyou) obj;
+                if (runtoyou.name.equals(runtoyou1.name) && runtoyou.category.equals(runtoyou1.category) && runtoyou.price == runtoyou1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

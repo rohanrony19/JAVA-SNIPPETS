@@ -27,4 +27,18 @@ public class ItEndsWithUs extends Book {
                 ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof ItEndsWithUs) {
+                ItEndsWithUs itEndsWithUs = this;
+                ItEndsWithUs itEndsWithUs1 = (ItEndsWithUs) obj;
+                if (itEndsWithUs.name.equals(itEndsWithUs1.name) && itEndsWithUs.category.equals(itEndsWithUs1.category) && itEndsWithUs.price == itEndsWithUs1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

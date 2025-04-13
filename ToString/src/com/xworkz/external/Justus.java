@@ -28,4 +28,18 @@ public class Justus extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Justus) {
+                Justus justus = this;
+                Justus justus1 = (Justus) obj;
+                if (justus.name.equals(justus1.name) && justus.category.equals(justus1.category) && justus.price == justus1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

@@ -28,4 +28,18 @@ public class Silentlove extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Silentlove) {
+                Silentlove silentlove = this;
+                Silentlove silentlove1 = (Silentlove) obj;
+                if (silentlove.name.equals(silentlove1.name) && silentlove.category.equals(silentlove1.category) && silentlove.price == silentlove1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

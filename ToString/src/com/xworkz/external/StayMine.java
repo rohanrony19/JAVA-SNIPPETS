@@ -28,4 +28,18 @@ public class StayMine extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof StayMine) {
+                StayMine stayMine = this;
+                StayMine stayMine1 = (StayMine) obj;
+                if (stayMine.name.equals(stayMine1.name) && stayMine.category.equals(stayMine1.category) && stayMine.price == stayMine1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

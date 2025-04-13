@@ -28,4 +28,18 @@ public class Secret extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Secret) {
+                Secret secret = this;
+                Secret secret1 = (Secret) obj;
+                if (secret.name.equals(secret1.name) && secret.category.equals(secret1.category) && secret.price == secret1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

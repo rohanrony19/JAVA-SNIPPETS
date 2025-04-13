@@ -28,4 +28,18 @@ public class LastCall extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof LastCall) {
+                LastCall lastCall = this;
+                LastCall lastCall1 = (LastCall) obj;
+                if (lastCall.name.equals(lastCall1.name) && lastCall.category.equals(lastCall1.category) && lastCall.price == lastCall1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

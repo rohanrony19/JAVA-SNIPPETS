@@ -28,4 +28,18 @@ public class HoldTight extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof HoldTight) {
+                HoldTight holdTight = this;
+                HoldTight holdTight1 = (HoldTight) obj;
+                if (holdTight.name.equals(holdTight1.name) && holdTight.category.equals(holdTight1.category) && holdTight.price == holdTight1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

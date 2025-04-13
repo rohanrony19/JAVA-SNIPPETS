@@ -28,4 +28,18 @@ public class SoulMate extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof SoulMate) {
+                SoulMate soulMate = this;
+                SoulMate soulMate1 = (SoulMate) obj;
+                if (soulMate.name.equals(soulMate1.name) && soulMate.category.equals(soulMate1.category) && soulMate.price == soulMate1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

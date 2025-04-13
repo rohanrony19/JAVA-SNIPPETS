@@ -28,4 +28,18 @@ public class RedRose extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof RedRose) {
+                RedRose redRose = this;
+                RedRose redRose1 = (RedRose) obj;
+                if (redRose.name.equals(redRose1.name) && redRose.category.equals(redRose1.category) && redRose.price == redRose1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

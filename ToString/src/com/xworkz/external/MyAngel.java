@@ -28,4 +28,18 @@ public class MyAngel extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof MyAngel) {
+                MyAngel myAngel = this;
+                MyAngel myAngel1 = (MyAngel) obj;
+                if (myAngel.name.equals(myAngel1.name) && myAngel.category.equals(myAngel1.category) && myAngel.price == myAngel1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

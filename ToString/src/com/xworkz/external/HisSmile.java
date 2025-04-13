@@ -26,4 +26,18 @@ public class HisSmile extends Book {
                 ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof HisSmile) {
+                HisSmile hisSmile = this;
+                HisSmile hisSmile1 = (HisSmile) obj;
+                if (hisSmile.name.equals(hisSmile1.name) && hisSmile.category.equals(hisSmile1.category) && hisSmile.price == hisSmile1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

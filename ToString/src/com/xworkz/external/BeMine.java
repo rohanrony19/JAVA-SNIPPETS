@@ -28,4 +28,18 @@ public class BeMine extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof BeMine) {
+                BeMine beMine = this;
+                BeMine beMine1 = (BeMine) obj;
+                if (beMine.name.equals(beMine1.name) && beMine.category.equals(beMine1.category) && beMine.price == beMine1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

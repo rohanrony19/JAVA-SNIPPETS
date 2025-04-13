@@ -28,4 +28,18 @@ public class SweatHeart extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof SweatHeart) {
+                SweatHeart sweatHeart = this;
+                SweatHeart sweatHeart1 = (SweatHeart) obj;
+                if (sweatHeart.name.equals(sweatHeart1.name) && sweatHeart.category.equals(sweatHeart1.category) && sweatHeart.price == sweatHeart1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

@@ -28,4 +28,18 @@ public class Heartless extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Heartless) {
+                Heartless heartless = this;
+                Heartless heartless1 = (Heartless) obj;
+                if (heartless.name.equals(heartless1.name) && heartless.category.equals(heartless1.category) && heartless.price == heartless1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

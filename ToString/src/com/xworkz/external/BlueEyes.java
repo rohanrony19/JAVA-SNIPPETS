@@ -28,4 +28,18 @@ public class BlueEyes extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof BlueEyes) {
+                BlueEyes blueEyes = this;
+                BlueEyes blueEyes1 = (BlueEyes) obj;
+                if (blueEyes.name.equals(blueEyes1.name) && blueEyes.category.equals(blueEyes1.category) && blueEyes.price == blueEyes1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

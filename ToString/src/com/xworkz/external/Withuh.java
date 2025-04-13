@@ -28,4 +28,18 @@ public class Withuh extends Book {
                         ", price=" + price
                 ;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Withuh) {
+                Withuh withuh = this;
+                Withuh withuh1 = (Withuh) obj;
+                if (withuh.name.equals(withuh1.name) && withuh.category.equals(withuh1.category) && withuh.price == withuh1.price) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }
