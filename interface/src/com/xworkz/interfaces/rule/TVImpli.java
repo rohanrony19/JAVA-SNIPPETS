@@ -15,4 +15,9 @@ public class TVImpli implements TV {
     public void increaseVolume() {
         System.out.println("Increasing TV volume");
     }
+
+    @Override
+    public void watch() {
+        System.out.println("watch tv");
+    }
 }

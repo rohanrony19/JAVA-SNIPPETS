@@ -15,4 +15,9 @@ public class SchoolImpli implements School {
     public void takeAttendance() {
         System.out.println("Taking school attendance");
     }
+
+    @Override
+    public void place() {
+        System.out.println("school is place");
+    }
 }

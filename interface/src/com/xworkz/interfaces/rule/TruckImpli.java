@@ -15,4 +15,9 @@ public class TruckImpli implements Truck {
     public void unload() {
         System.out.println("Truck is unloading");
     }
+
+    @Override
+    public void carry() {
+        System.out.println("truck carry");
+    }
 }

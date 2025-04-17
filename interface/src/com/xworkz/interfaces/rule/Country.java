@@ -4,4 +4,6 @@ public interface Country {
     void develop();
     void maintainLaw();
     void representCulture();
+
+    void india();
 }

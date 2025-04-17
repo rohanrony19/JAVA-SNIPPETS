@@ -15,4 +15,9 @@ public class BetImpli implements Bet {
     public void lose() {
         System.out.println("Lost the bet");
     }
+
+    @Override
+    public void notGood() {
+        System.out.println("betting is not good");
+    }
 }

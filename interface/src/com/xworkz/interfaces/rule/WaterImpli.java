@@ -15,4 +15,9 @@ public class WaterImpli implements Water {
     public void flow() {
         System.out.println("Water is flowing");
     }
+
+    @Override
+    public void cost() {
+        System.out.println("water");
+    }
 }

@@ -15,4 +15,9 @@ public class TeachersImpli implements Teachers {
     public void guideStudents() {
         System.out.println("Teacher is guiding students");
     }
+
+    @Override
+    public void strict() {
+        System.out.println("teachers are strict");
+    }
 }

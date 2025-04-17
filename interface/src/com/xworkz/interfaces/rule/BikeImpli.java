@@ -15,4 +15,9 @@ public class BikeImpli implements Bike {
     public void stop() {
         System.out.println("Bike stopped");
     }
+
+    @Override
+    public void wheel() {
+        System.out.println("bike have wheels");
+    }
 }

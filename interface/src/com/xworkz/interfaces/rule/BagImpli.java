@@ -18,4 +18,9 @@ public class BagImpli implements Bag{
         System.out.println("bag size");
 
     }
+
+    @Override
+    public void need() {
+        System.out.println("bag is needed");
+    }
 }

@@ -15,4 +15,9 @@ public class TempleImpli implements Temple {
     public void ringBell() {
         System.out.println("Temple bell is ringing");
     }
+
+    @Override
+    public void divine() {
+        System.out.println("temple is a devine place");
+    }
 }

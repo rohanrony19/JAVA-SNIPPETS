@@ -15,4 +15,9 @@ public class ChainImpli implements Chain {
     public void shine() {
         System.out.println("Chain is shiny");
     }
+
+    @Override
+    public void dog() {
+        System.out.println("dog have chain");
+    }
 }

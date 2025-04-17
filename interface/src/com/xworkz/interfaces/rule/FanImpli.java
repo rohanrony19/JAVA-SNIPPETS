@@ -15,4 +15,9 @@ public class FanImpli implements Fan {
     public void changeSpeed() {
         System.out.println("Fan speed changed");
     }
+
+    @Override
+    public void must() {
+        System.out.println("fan is must");
+    }
 }

@@ -15,4 +15,9 @@ public class WatchImpli implements Watch {
     public void waterproof() {
         System.out.println("Watch is waterproof");
     }
+
+    @Override
+    public void time() {
+        System.out.println("watch to check time");
+    }
 }

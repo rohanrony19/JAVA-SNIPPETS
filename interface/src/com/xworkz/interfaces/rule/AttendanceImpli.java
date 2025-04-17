@@ -15,4 +15,9 @@ public class AttendanceImpli implements Attendance {
     public void calculatePercentage() {
         System.out.println("Calculating attendance percentage");
     }
+
+    @Override
+    public void mandatory() {
+        System.out.println("attendance is mandatory");
+    }
 }

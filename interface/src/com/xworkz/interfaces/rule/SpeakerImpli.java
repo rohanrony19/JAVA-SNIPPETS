@@ -15,4 +15,9 @@ public class SpeakerImpli implements Speaker {
     public void increaseVolume() {
         System.out.println("Speaker volume increased");
     }
+
+    @Override
+    public void sound() {
+        System.out.println("speaker sound");
+    }
 }

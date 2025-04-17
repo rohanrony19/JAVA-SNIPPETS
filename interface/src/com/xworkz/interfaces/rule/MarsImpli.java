@@ -15,4 +15,9 @@ public class MarsImpli implements Mars {
     public void hasMountains() {
         System.out.println("Mars has the tallest mountain in the solar system");
     }
+
+    @Override
+    public void planet() {
+        System.out.println("mars is a planet");
+    }
 }

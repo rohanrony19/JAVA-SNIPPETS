@@ -15,4 +15,9 @@ public class TrainImpli implements Train {
     public void horn() {
         System.out.println("Train horn is loud");
     }
+
+    @Override
+    public void big() {
+        System.out.println("big");
+    }
 }

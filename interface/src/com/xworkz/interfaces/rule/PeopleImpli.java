@@ -15,4 +15,9 @@ public class PeopleImpli implements People {
     public void help() {
         System.out.println("People are helping each other");
     }
+
+    @Override
+    public void dull() {
+        System.out.println("people are dull");
+    }
 }

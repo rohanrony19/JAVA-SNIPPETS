@@ -15,4 +15,9 @@ public class StarImpli implements Star {
     public void visibleAtNight() {
         System.out.println("Star is visible at night");
     }
+
+    @Override
+    public void planet() {
+        System.out.println("star");
+    }
 }

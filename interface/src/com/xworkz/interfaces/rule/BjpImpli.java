@@ -15,4 +15,9 @@ public class BjpImpli implements Bjp {
     public void launchScheme() {
         System.out.println("BJP launched a new scheme");
     }
+
+    @Override
+    public void party() {
+        System.out.println("bjp is a party");
+    }
 }

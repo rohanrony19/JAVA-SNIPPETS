@@ -15,4 +15,9 @@ public class PlutoImpli implements Pluto {
     public void hasIce() {
         System.out.println("Pluto has icy surface");
     }
+
+    @Override
+    public void planet() {
+        System.out.println("pluto is a planet");
+    }
 }

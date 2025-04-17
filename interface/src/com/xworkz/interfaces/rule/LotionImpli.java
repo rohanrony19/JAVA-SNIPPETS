@@ -15,4 +15,9 @@ public class LotionImpli implements Lotion {
     public void moisturize() {
         System.out.println("Skin moisturized");
     }
+
+    @Override
+    public void a() {
+        System.out.println("a");
+    }
 }

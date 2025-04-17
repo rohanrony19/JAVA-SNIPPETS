@@ -4,4 +4,6 @@ public interface Pluto {
     void revolve();
     void rotate();
     void hasIce();
+
+    void planet();
 }

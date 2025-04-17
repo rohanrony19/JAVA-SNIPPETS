@@ -15,4 +15,9 @@ public class PlatinumImpli implements Platinum {
     public void doesNotTarnish() {
         System.out.println("Platinum does not tarnish");
     }
+
+    @Override
+    public void metal() {
+        System.out.println("platinum is a metal");
+    }
 }

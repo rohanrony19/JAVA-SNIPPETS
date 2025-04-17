@@ -15,4 +15,9 @@ public class SilverImpli implements Silver {
     public void reflectLight() {
         System.out.println("Silver reflects light");
     }
+
+    @Override
+    public void metal() {
+        System.out.println("metal silver");
+    }
 }

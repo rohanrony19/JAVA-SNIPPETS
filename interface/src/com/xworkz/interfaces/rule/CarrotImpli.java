@@ -15,4 +15,9 @@ public class CarrotImpli implements Carrot {
     public void hasVitaminA() {
         System.out.println("Carrot contains Vitamin A");
     }
+
+    @Override
+    public void vegie() {
+        System.out.println("carrot is vegetable");
+    }
 }

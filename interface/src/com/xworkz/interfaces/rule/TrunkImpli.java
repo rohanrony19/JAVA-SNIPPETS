@@ -15,4 +15,9 @@ public class TrunkImpli implements Trunk {
     public void close() {
         System.out.println("Trunk is closed");
     }
+
+    @Override
+    public void elephant() {
+        System.out.println("animal have");
+    }
 }

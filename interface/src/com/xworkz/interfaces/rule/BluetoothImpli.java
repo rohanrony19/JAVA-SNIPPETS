@@ -15,4 +15,9 @@ public class BluetoothImpli implements Bluetooth {
     public void unpair() {
         System.out.println("Bluetooth unpaired device");
     }
+
+    @Override
+    public void connect() {
+        System.out.println("bluetooth need to be connected");
+    }
 }

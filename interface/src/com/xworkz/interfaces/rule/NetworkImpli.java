@@ -15,4 +15,9 @@ public class NetworkImpli implements Network {
     public void disconnect() {
         System.out.println("Network disconnected");
     }
+
+    @Override
+    public void speed() {
+        System.out.println("network speed");
+    }
 }

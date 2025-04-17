@@ -15,4 +15,9 @@ public class LibraryImpli implements Library {
     public void close() {
         System.out.println("Library closed");
     }
+
+    @Override
+    public void good() {
+        System.out.println("library is good");
+    }
 }

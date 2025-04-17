@@ -15,4 +15,9 @@ public class DramaImpli implements Drama {
     public void rehearse() {
         System.out.println("Rehearsing drama");
     }
+
+    @Override
+    public void good() {
+        System.out.println("drama is good");
+    }
 }

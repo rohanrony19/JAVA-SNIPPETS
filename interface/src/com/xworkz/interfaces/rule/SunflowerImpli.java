@@ -15,4 +15,9 @@ public class SunflowerImpli implements Sunflower {
     public void growTall() {
         System.out.println("Sunflower grows tall");
     }
+
+    @Override
+    public void flower() {
+        System.out.println("flower");
+    }
 }

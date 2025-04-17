@@ -15,4 +15,9 @@ public class IndiaImpli implements India {
     public void growEconomy() {
         System.out.println("India's economy is growing");
     }
+
+    @Override
+    public void country() {
+        System.out.println("india is a country");
+    }
 }

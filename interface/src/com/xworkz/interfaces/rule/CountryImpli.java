@@ -15,4 +15,9 @@ public class CountryImpli implements Country {
     public void representCulture() {
         System.out.println("Country represents its culture");
     }
+
+    @Override
+    public void india() {
+        System.out.println("country is India");
+    }
 }

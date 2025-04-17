@@ -15,4 +15,9 @@ public class RadioImpli implements Radio {
     public void increaseVolume() {
         System.out.println("Increasing radio volume");
     }
+
+    @Override
+    public void play() {
+        System.out.println("radio play");
+    }
 }

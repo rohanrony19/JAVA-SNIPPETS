@@ -15,4 +15,9 @@ public class MoonImpli implements Moon {
     public void appearAtNight() {
         System.out.println("Moon appears at night");
     }
+
+    @Override
+    public void light() {
+        System.out.println("moon light");
+    }
 }

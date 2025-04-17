@@ -15,4 +15,9 @@ public class RoseImpli implements Rose {
     public void hasThorns() {
         System.out.println("Rose has thorns");
     }
+
+    @Override
+    public void flower() {
+        System.out.println("rose is floew");
+    }
 }

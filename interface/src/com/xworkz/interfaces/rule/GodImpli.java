@@ -15,4 +15,9 @@ public class GodImpli implements God {
     public void guide() {
         System.out.println("God guides people");
     }
+
+    @Override
+    public void havePlan() {
+        System.out.println("god have plans");
+    }
 }

@@ -15,4 +15,9 @@ public class BarbieImpli implements Barbie {
     public void play() {
         System.out.println("Playing with Barbie");
     }
+
+    @Override
+    public void fav() {
+        System.out.println("barbie is fav");
+    }
 }

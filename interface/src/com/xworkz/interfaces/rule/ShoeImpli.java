@@ -15,4 +15,9 @@ public class ShoeImpli implements Shoe {
     public void walk() {
         System.out.println("Walking with shoes");
     }
+
+    @Override
+    public void size() {
+        System.out.println("size");
+    }
 }
