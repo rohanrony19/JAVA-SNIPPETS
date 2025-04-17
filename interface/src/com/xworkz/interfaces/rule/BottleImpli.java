@@ -15,4 +15,9 @@ public class BottleImpli implements Bottle {
     public void isReusable() {
         System.out.println("Bottle is reusable");
     }
+
+    @Override
+    public void water() {
+        System.out.println("bottle to fill water");
+    }
 }

@@ -15,4 +15,9 @@ public class HMImpli implements HM {
     public void sell() {
         System.out.println("Selling stylish clothes");
     }
+
+    @Override
+    public void brand() {
+        System.out.println("cloth brand");
+    }
 }

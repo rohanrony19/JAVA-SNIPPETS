@@ -15,4 +15,9 @@ public class UniversityImpli implements University {
     public void grantDegrees() {
         System.out.println("University is granting degrees");
     }
+
+    @Override
+    public void place() {
+        System.out.println("university is a place");
+    }
 }

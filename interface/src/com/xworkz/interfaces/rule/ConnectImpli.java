@@ -15,4 +15,9 @@ public class ConnectImpli implements Connect {
     public void terminate() {
         System.out.println("Connection terminated");
     }
+
+    @Override
+    public void people() {
+        System.out.println("connect people");
+    }
 }

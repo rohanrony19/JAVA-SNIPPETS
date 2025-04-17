@@ -15,4 +15,10 @@ public class ACImpli implements AC {
     public void swing() {
         System.out.println("AC swing mode on");
     }
+
+    @Override
+    public void costly() {
+        AC.super.costly();
+        System.out.println("costly");
+    }
 }

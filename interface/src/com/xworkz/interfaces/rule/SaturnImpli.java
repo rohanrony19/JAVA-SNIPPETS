@@ -15,4 +15,9 @@ public class SaturnImpli implements Saturn {
     public void attractMoons() {
         System.out.println("Saturn has many moons");
     }
+
+    @Override
+    public void planet() {
+        System.out.println("planet");
+    }
 }

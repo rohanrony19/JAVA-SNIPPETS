@@ -15,4 +15,9 @@ public class GoaImpli implements Goa {
     public void exploreChurches() {
         System.out.println("Exploring Goa churches");
     }
+
+    @Override
+    public void place() {
+        System.out.println("goa is a place");
+    }
 }

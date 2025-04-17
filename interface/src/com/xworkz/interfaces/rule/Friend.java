@@ -4,4 +4,6 @@ public interface Friend {
     void support();
     void share();
     void makeLaugh();
+
+    void inNeed();
 }

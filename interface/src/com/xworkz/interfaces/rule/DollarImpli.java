@@ -15,4 +15,9 @@ public class DollarImpli implements Dollar {
     public void value() {
         System.out.println("Dollar has high value");
     }
+
+    @Override
+    public void money() {
+        System.out.println("dollar is money");
+    }
 }

@@ -15,4 +15,9 @@ public class ModhiImpli implements Modhi {
     public void visitState() {
         System.out.println("Modhi is visiting a state");
     }
+
+    @Override
+    public void pm() {
+        System.out.println("modhi is pm");
+    }
 }

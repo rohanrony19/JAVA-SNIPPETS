@@ -15,4 +15,9 @@ public class TrolleyImpli implements Trolley {
     public void store() {
         System.out.println("Trolley is used to store items");
     }
+
+    @Override
+    public void hold() {
+        System.out.println("hold");
+    }
 }

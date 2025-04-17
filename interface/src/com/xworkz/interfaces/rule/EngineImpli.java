@@ -15,4 +15,9 @@ public class EngineImpli implements Engine {
     public void stop() {
         System.out.println("Engine stopped");
     }
+
+    @Override
+    public void repair() {
+        System.out.println("engine repair");
+    }
 }

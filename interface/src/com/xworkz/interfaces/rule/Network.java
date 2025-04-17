@@ -4,4 +4,6 @@ public interface Network {
     void connect();
     void transferData();
     void disconnect();
+
+    void speed();
 }

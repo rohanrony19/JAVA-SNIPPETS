@@ -15,4 +15,9 @@ public class DoctorImpli implements Doctor {
     public void performSurgery() {
         System.out.println("Doctor performing surgery");
     }
+
+    @Override
+    public void human() {
+        System.out.println("doctor is a human");
+    }
 }

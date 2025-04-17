@@ -15,4 +15,9 @@ public class MoneyImpli implements Money {
     public void invest() {
         System.out.println("Money is invested");
     }
+
+    @Override
+    public void must() {
+        System.out.println("money must");
+    }
 }

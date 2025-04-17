@@ -15,4 +15,9 @@ public class CollageImpli implements Collage {
     public void manageDepartments() {
         System.out.println("Collage is managing departments");
     }
+
+    @Override
+    public void pesitm() {
+        System.out.println("collage is pesitm");
+    }
 }

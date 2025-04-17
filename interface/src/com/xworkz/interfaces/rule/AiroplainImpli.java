@@ -15,4 +15,9 @@ public class AiroplainImpli implements Airoplain {
     public void carryPassengers() {
         System.out.println("Carrying passengers in Airoplain");
     }
+
+    @Override
+    public void costly() {
+        System.out.println("Costly");
+    }
 }

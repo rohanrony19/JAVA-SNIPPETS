@@ -4,4 +4,6 @@ public interface Speaker {
     void produceSound();
     void connectBluetooth();
     void increaseVolume();
+
+    void sound();
 }

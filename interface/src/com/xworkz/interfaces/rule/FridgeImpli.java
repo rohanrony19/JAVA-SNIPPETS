@@ -15,4 +15,9 @@ public class FridgeImpli implements Fridge {
     public void makeIce() {
         System.out.println("Fridge makes ice");
     }
+
+    @Override
+    public void things() {
+        System.out.println("fridge is used to keep things");
+    }
 }

@@ -15,4 +15,9 @@ public class KidImpli implements Kid {
     public void eat() {
         System.out.println("Kid is eating");
     }
+
+    @Override
+    public void child() {
+        System.out.println("child");
+    }
 }

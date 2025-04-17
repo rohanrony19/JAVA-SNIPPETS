@@ -15,4 +15,9 @@ public class PondsImpli implements Ponds {
     public void freshFeel() {
         System.out.println("Feeling fresh");
     }
+
+    @Override
+    public void cream() {
+        System.out.println("ponds is a cream");
+    }
 }

@@ -15,4 +15,9 @@ public class PetrolImpli implements Petrol {
     public void checkLevel() {
         System.out.println("Petrol level checked");
     }
+
+    @Override
+    public void money() {
+        System.out.println("petrol money");
+    }
 }

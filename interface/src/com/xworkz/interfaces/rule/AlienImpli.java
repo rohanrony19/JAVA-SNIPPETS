@@ -15,4 +15,9 @@ public class AlienImpli implements Alien {
     public void communicate() {
         System.out.println("Alien communicates telepathically");
     }
+
+    @Override
+    public void ugly() {
+        System.out.println("is Ugly");
+    }
 }

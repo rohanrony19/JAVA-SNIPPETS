@@ -15,4 +15,9 @@ public class LeaveImpli implements Leave {
     public void reject() {
         System.out.println("Leave rejected");
     }
+
+    @Override
+    public void take() {
+        System.out.println("leave take");
+    }
 }

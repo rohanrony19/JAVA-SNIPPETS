@@ -15,4 +15,9 @@ public class SunImpli implements Sun {
     public void giveLight() {
         System.out.println("Sun gives light and heat");
     }
+
+    @Override
+    public void bright() {
+        System.out.println("bright sun");
+    }
 }

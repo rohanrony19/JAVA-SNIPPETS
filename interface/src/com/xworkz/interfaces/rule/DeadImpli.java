@@ -15,4 +15,9 @@ public class DeadImpli implements Dead {
     public void mourn() {
         System.out.println("Mourning for the dead");
     }
+
+    @Override
+    public void body() {
+        System.out.println("dead body");
+    }
 }

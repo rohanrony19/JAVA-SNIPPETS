@@ -4,4 +4,6 @@ public interface Mars {
     void isRedPlanet();
     void hasDustStorms();
     void hasMountains();
+
+    void planet();
 }

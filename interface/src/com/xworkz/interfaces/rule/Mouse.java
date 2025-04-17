@@ -18,6 +18,11 @@ public class Mouse implements AC, Airoplain {
     }
 
     @Override
+    public void costly() {
+        System.out.println("AC is costly");
+    }
+
+    @Override
     public void fly() {
         System.out.println("Mouse is flying like an airplane");
     }

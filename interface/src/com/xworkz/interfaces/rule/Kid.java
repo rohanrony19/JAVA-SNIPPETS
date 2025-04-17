@@ -4,4 +4,6 @@ public interface Kid {
     void play();
     void learn();
     void eat();
+
+    void child();
 }

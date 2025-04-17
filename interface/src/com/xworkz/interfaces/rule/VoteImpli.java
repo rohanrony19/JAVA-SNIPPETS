@@ -15,4 +15,9 @@ public class VoteImpli implements Vote {
     public void countVote() {
         System.out.println("Votes are being counted");
     }
+
+    @Override
+    public void right() {
+        System.out.println("voting is a fundamental right");
+    }
 }

@@ -15,4 +15,9 @@ public class RemoteImpli implements Remote {
     public void changeSetting() {
         System.out.println("Changing setting with remote");
     }
+
+    @Override
+    public void press() {
+        System.out.println("press remote");
+    }
 }

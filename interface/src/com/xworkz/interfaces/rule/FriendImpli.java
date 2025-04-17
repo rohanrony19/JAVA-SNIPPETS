@@ -15,4 +15,9 @@ public class FriendImpli implements Friend {
     public void makeLaugh() {
         System.out.println("Friend makes you laugh");
     }
+
+    @Override
+    public void inNeed() {
+        System.out.println("friend in need");
+    }
 }

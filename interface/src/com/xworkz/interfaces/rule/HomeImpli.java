@@ -17,4 +17,9 @@ public class HomeImpli implements Home{
         System.out.println("speakLoud");
         return false;
     }
+
+    @Override
+    public void place() {
+        System.out.println("home is safe place");
+    }
 }

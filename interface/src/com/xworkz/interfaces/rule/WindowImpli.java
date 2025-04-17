@@ -15,4 +15,9 @@ public class WindowImpli implements Window {
     public void allowAir() {
         System.out.println("Window allows air flow");
     }
+
+    @Override
+    public void light() {
+        System.out.println("window is for light");
+    }
 }

@@ -15,4 +15,9 @@ public class MovieImpli implements Movie {
     public void stop() {
         System.out.println("Movie is stopped");
     }
+
+    @Override
+    public void watch() {
+        System.out.println("watch movie");
+    }
 }

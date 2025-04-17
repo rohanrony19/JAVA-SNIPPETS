@@ -15,4 +15,9 @@ public class HotspotImpli implements Hotspot {
     public void turnOff() {
         System.out.println("Hotspot is turned off");
     }
+
+    @Override
+    public void connect() {
+        System.out.println("connct hotspot");
+    }
 }

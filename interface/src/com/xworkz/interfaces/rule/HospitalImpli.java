@@ -15,4 +15,9 @@ public class HospitalImpli implements Hospital {
     public void dischargePatient() {
         System.out.println("Discharging patient");
     }
+
+    @Override
+    public void emergency() {
+        System.out.println("hospital emergency");
+    }
 }

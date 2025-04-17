@@ -4,4 +4,6 @@ public interface People {
     void talk();
     void walk();
     void help();
+
+    void dull();
 }

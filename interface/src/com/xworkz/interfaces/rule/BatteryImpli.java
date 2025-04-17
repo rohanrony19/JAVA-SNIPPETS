@@ -15,4 +15,9 @@ public class BatteryImpli implements Battery {
     public void isRechargeable() {
         System.out.println("Battery is rechargeable");
     }
+
+    @Override
+    public void percentage() {
+        System.out.println("charger to increase percentage");
+    }
 }

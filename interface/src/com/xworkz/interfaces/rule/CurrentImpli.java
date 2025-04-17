@@ -15,4 +15,9 @@ public class CurrentImpli implements Current {
     public void lightUp() {
         System.out.println("Current lights up the room");
     }
+
+    @Override
+    public void volt() {
+        System.out.println("current have volatage");
+    }
 }

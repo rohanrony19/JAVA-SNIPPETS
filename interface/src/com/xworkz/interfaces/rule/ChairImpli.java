@@ -15,4 +15,9 @@ public class ChairImpli implements Chair {
     public void isComfortable() {
         System.out.println("Chair is comfortable");
     }
+
+    @Override
+    public void plastic() {
+        System.out.println("chair made of plastic");
+    }
 }

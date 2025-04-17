@@ -15,4 +15,9 @@ public class OrangeImpli implements Orange {
     public void isRound() {
         System.out.println("Orange is round in shape");
     }
+
+    @Override
+    public void fruit() {
+        System.out.println("orange is a fruit");
+    }
 }

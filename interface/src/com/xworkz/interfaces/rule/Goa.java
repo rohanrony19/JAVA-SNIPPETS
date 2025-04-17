@@ -4,4 +4,6 @@ public interface Goa {
     void enjoyBeach();
     void party();
     void exploreChurches();
+
+    void place();
 }

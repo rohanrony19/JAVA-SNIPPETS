@@ -15,4 +15,9 @@ public class GoldImpli implements Gold {
     public void usedForJewellery() {
         System.out.println("Gold is used for jewellery");
     }
+
+    @Override
+    public void rate() {
+        System.out.println("gold rate");
+    }
 }

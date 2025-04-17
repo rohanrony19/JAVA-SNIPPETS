@@ -15,4 +15,9 @@ public class DogImpli implements Dog {
     public void wagTail() {
         System.out.println("Dog is wagging tail");
     }
+
+    @Override
+    public void cute() {
+        System.out.println("dog is cute");
+    }
 }
