@@ -104,6 +104,7 @@ public class Runner {
         Database database=new DatabaseImpli();
         postgre postgree =new postgre(database);
         postgree.query();
-        System.out.println(" ");
+        System.out.println("  ");
+
     }
 }
