@@ -1,0 +1,57 @@
+"SERVLETS"
+
+Servlets are Java programs that run on a Java-enabled web server (like Apache Tomcat) and handle HTTP requests and responses. They are a core part of Java EE (Jakarta EE) used for building dynamic web applications.
+
+Methods in Servlets:
+1.init(ServletConfig config)
+2.destroy()
+3.servletinfo
+5.getServletConfig()
+4.service(HttpServletRequest req, HttpServletResponse res)
+
+
+Steps to deploy servlets
+
+1.Create a project(Moon)
+2.Create package(com.xworkz.moon.servlet)
+3.In Project Structure add servlet-api
+4.create a directory in edit config (Star)-> to write html code(index.html)
+5.create a java file inside package(MoonServlet)
+6.In java file extends GenericServlet and override the service method which include    ServletRequest ,ServletResponse
+7.write constructor as MoonServlet
+8.Create WebServlet in top of the class which helps the Tomcat to create object
+9.It include urlPatterns ="/moon" and loadOnStartup=1
+10./moon in urlPatterns which connects the html file as <form action="moon">
+11.Run the file
+12.It runs on the web application as localhost add also add /index.html
+
+Code
+
+"index.html"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Galaxy</title>
+</head>
+<body>
+    <h1>Testing html is connected to java</h1>
+    <form action="moon">
+        <input type="submit" value="Click">
+    </form>
+</body>
+</html>
+
+"MoonServlet.java"
+@WebServlet(urlPatterns = "/moon",loadOnStartup = 1)
+public class MoonServlet extends GenericServlet {
+
+    public MoonServlet(){
+        System.out.println("MoonServlet created by Tomcat");
+    }
+
+    @Override
+    public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
+        System.out.println("Running service");
+    }
+}
