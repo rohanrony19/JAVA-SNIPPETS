@@ -30,7 +30,7 @@ public class Laptop {
                     case NUMERIC:
                         System.out.println(cell.getNumericCellValue()+"/t");break;
                 }
-            } 
+            }
             System.out.println();
         }
 
