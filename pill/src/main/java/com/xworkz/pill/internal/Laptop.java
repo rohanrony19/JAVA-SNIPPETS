@@ -33,7 +33,7 @@ public class Laptop {
             }
             System.out.println();
         }
- 
+
 
 
 
