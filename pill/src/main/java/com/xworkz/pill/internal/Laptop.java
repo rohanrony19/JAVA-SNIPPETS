@@ -21,7 +21,7 @@ public class Laptop {
 
         for(int r=0; r<rows; r++){
            XSSFRow row =sheet.getRow(r);
-            for (int c=0; c<cols;c++){
+            for (int c=0; c<cols;c++){ 
                 XSSFCell cell= row.getCell(c);
 
                 switch (cell.getCellType()){
