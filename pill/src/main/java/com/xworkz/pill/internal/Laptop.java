@@ -18,7 +18,7 @@ public class Laptop {
 
         int rows= sheet.getLastRowNum();
         int cols=sheet.getRow(1).getLastCellNum();
- 
+
         for(int r=0; r<rows; r++){
            XSSFRow row =sheet.getRow(r);
             for (int c=0; c<cols;c++){
