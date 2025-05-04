@@ -15,7 +15,7 @@ public class Laptop {
 
         XSSFWorkbook workbook=new XSSFWorkbook(inputStream);
         XSSFSheet sheet= workbook.getSheet("sheet1");
-
+ 
         int rows= sheet.getLastRowNum();
         int cols=sheet.getRow(1).getLastCellNum();
 
