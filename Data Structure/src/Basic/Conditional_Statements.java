@@ -30,6 +30,17 @@ public class Conditional_Statements {
         System.out.println(salary);
 
         // Switch statements
+        /*
+        switch(expression){
+        case 1:
+            do something
+            break;
+        case 2:
+            do something
+            break;
+        default:
+            do something
+         */
 
         int day = 3;
         switch (day){
