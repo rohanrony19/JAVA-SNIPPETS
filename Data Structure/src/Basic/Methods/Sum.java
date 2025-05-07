@@ -13,7 +13,7 @@ public class Sum {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter first number : ");
         int num1 = in.nextInt();
-        System.out.println("Enter second number : ");
+        System.out.print("Enter second number : ");
         int num2 = in.nextInt();
         int sum = num1 + num2;
         return sum;
