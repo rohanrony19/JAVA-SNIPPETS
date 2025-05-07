@@ -27,4 +27,4 @@ public class Sum {
         int sum = num1 + num2;
         System.out.println("The sum = " + sum);
     }
-}
+} 
