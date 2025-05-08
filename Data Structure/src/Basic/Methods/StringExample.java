@@ -1,12 +1,17 @@
 package Basic.Methods;
 
+import java.util.Scanner;
+
 public class StringExample {
 
     public static void main(String[] args) {
 //        String message = dominos();
 //        System.out.println(message);
 
-        String personalized = myGreat("Rony");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your name: ");
+        String name = sc.next();
+        String personalized = myGreat(name);
         System.out.println(personalized);
     }
     static  String myGreat(String name){
