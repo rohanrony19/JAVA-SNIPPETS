@@ -10,7 +10,6 @@ public class Swap {
 //        a = b;
 //        b = temp;
         swap(10,20);
-        System.out.println(a + " " + b);
 
         String name = "rony";
         changeName(name);
@@ -25,5 +24,7 @@ public class Swap {
         int temp = a;
         a = b;
         b = temp;
+        System.out.println(a + " " + b);
+
     }
 }
