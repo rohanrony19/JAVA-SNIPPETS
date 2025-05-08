@@ -9,7 +9,7 @@ public class StringExample {
 //        System.out.println(message);
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter your name: ");
+        System.out.print("Enter your name: ");
         String name = sc.next();
         String personalized = myGreat(name);
         System.out.println(personalized);
