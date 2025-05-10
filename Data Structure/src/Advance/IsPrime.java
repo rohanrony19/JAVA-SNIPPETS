@@ -10,7 +10,7 @@ public class IsPrime {
 //        System.out.println(ans);
         System.out.println(isPrime(n));
     }
-
+  
     static boolean isPrime(int n){
         if (n <= 1){
             return false;
