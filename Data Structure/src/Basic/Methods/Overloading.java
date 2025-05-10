@@ -4,7 +4,7 @@ public class Overloading {
     public static void main(String[] args) {
         fun(69);
         fun("mansi");
-        fun(10,20); 
+        fun(10,20);
     }
     static void fun(int a){
         System.out.println(a);
