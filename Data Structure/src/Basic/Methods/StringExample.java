@@ -13,7 +13,7 @@ public class StringExample {
         String name = sc.next();
         String personalized = myGreat(name);
         System.out.println(personalized);
-    } 
+    }
     static  String myGreat(String name){
         String message = "Hello " + name;
         return message;
