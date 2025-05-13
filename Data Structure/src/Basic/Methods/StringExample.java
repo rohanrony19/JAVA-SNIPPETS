@@ -16,7 +16,7 @@ public class StringExample {
     }
     static  String myGreat(String name){
         String message = "Hello " + name;
-        return message;
+        return message;   
     }
     static String dominos(){
         String pizza = "pizza is delicious ";
