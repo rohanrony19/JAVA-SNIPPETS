@@ -6,5 +6,5 @@ public class Greeting {
     }
     static void greeting(){
         System.out.println("Hello World");
-    }
+    } 
 }
