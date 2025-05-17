@@ -19,7 +19,6 @@ public class Array2 {
         System.out.println(Arrays.toString(nums));
         changes(nums);
         System.out.println(Arrays.toString(nums));
-
     }
     static void changes(int[] arr){
         arr[0] = 99;
