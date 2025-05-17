@@ -29,7 +29,7 @@ public class MultiDimension {
             for (int col = 0; col < arr2[row].length ;col++){
                 arr2[row][col] = in.nextInt();
                 System.out.print(Arrays.toString(arr2[row]) + " ");
-            } 
+            }
             System.out.println();
         }
 
