@@ -48,7 +48,7 @@ public class Array1 {
             num = in.nextInt();
             System.out.println(num + "");
         }
-        //or directly
+        //or directly 
         int[] rolllno = {23,24,25,26,27};
     }
 }
