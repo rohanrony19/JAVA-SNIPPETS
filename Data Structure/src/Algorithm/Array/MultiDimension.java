@@ -20,7 +20,7 @@ public class MultiDimension {
         };
 //        System.out.println(arr1[1][1]);
 
-        //input   
+        //input
         Scanner in = new Scanner(System.in);
         int[][] arr2 = new int[3][2];
         System.out.println(arr2.length); //no of rows=3
