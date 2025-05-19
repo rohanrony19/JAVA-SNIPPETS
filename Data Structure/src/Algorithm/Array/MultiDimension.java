@@ -22,15 +22,29 @@ public class MultiDimension {
 
         //input
         Scanner in = new Scanner(System.in);
-        int[][] arr2 = new int[3][2];
+        int[][] arr2 = new int[3][3];
         System.out.println(arr2.length); //no of rows=3
         for(int row = 0; row < arr2.length; row++){
             // for each col in every row
-            for (int col = 0; col < arr2[row].length ;col++){
+            for (int col = 0; col < arr2[row].length ;col++) {
                 arr2[row][col] = in.nextInt();
-                System.out.print(Arrays.toString(arr2[row]) + " ");
             }
-            System.out.println();
+        }
+        //output
+//        for(int row = 0; row < arr2.length; row++){
+//            // for each col in every row
+//            for (int col = 0; col < arr2[row].length ;col++){
+//
+//                System.out.print(arr2[row][col] + " ");
+//            }
+//            System.out.println();
+//        }
+        for(int row = 0; row < arr2.length; row++){
+            System.out.println(Arrays.toString(arr2[row]));
+        }
+        //enhanced for loop
+        for(int[] a:arr2){
+            System.out.println(Arrays.toString(a));
         }
 
     }
