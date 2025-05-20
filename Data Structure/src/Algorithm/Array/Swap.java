@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 public class Swap {
     public static void main(String[] args) {
-        int[] arr = {1, 3, 23, 8,18};  
+        int[] arr = {1, 3, 23, 8,18};
         int[] arr1 = {1 ,2 ,3 ,4 ,5};
-        swap(arr, 0, 4);
+        swap(arr, 0, 4);  
         reverse(arr1);
         System.out.println(Arrays.toString(arr));
         System.out.println(Arrays.toString(arr1));
