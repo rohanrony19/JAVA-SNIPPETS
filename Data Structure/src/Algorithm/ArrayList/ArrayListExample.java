@@ -1,4 +1,4 @@
-package Algorithm.Array;
+package Algorithm.ArrayList;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -7,7 +7,7 @@ public class ArrayListExample {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         // syntax
-        //Array list in nothing which does not have size to be declare
+        //Array list is nothing which does not have exact size to be declare
         ArrayList<Integer> list = new ArrayList<>(5);
 
 //        list.add(67);
