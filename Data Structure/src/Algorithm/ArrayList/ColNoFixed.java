@@ -1,4 +1,4 @@
-package Algorithm.Array;
+package Algorithm.ArrayList;
 
 public class ColNoFixed {
     public static void main(String[] args) {
