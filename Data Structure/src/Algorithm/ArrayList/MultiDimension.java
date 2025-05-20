@@ -1,4 +1,4 @@
-package Algorithm.Array;
+package Algorithm.ArrayList;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -29,7 +29,7 @@ public class MultiDimension {
             for (int col = 0; col < arr2[row].length ;col++) {
                 arr2[row][col] = in.nextInt();
             }
-        } 
+        }
         //output
 //        for(int row = 0; row < arr2.length; row++){
 //            // for each col in every row
