@@ -36,7 +36,7 @@ public class MultiDimension {
 //            for (int col = 0; col < arr2[row].length ;col++){
 //
 //                System.out.print(arr2[row][col] + " ");
-//            }
+//            } 
 //            System.out.println();
 //        }
         for(int row = 0; row < arr2.length; row++){
