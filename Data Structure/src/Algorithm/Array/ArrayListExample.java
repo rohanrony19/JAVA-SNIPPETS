@@ -15,7 +15,7 @@ public class ArrayListExample {
 //        list.add(69);
 //        list.add(64);
 //        list.add(557);
-//        list.add(688); 
+//        list.add(688);
 //        list.add(70);
 //        list.add(72);
 
