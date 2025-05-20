@@ -1,4 +1,4 @@
-package Algorithm.Array;
+package Algorithm.ArrayList;
 
 public class Max {
     public static void main(String[] args) {
