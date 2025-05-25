@@ -14,5 +14,5 @@ public class AnagramCheck {
         Arrays.sort(b);
 
         System.out.println(Arrays.equals(a, b) ? "Anagram" : "Not Anagram");
-    }   
+    }
 }
