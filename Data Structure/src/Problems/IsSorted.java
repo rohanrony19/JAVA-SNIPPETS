@@ -14,4 +14,4 @@ public class IsSorted {
         System.out.println(isSorted ? "Sorted" : "Not Sorted");
     }
 }
-    
+       
