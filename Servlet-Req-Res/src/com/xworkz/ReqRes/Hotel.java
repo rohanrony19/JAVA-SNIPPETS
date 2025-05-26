@@ -6,6 +6,7 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 @WebServlet(urlPatterns = "/Hotel",loadOnStartup = 2)
 public class Hotel extends GenericServlet {
@@ -38,6 +39,19 @@ public class Hotel extends GenericServlet {
 
         String ref7 = servletRequest.getParameter("views");
         System.out.println("views: " +ref7);
+
+       PrintWriter printWriter= servletResponse.getWriter();
+        printWriter.write("<html>");
+        printWriter.write("<body>");
+        printWriter.write("<h1>");
+        printWriter.write("Hotel info send success...");
+
+        printWriter.write("</h1>");
+
+        printWriter.write("</body>");
+
+        printWriter.write("</html>");
+
 
 
     }
