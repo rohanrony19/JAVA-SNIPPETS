@@ -17,7 +17,7 @@ public class Movie extends GenericServlet {
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
         System.out.println("Running service in Movie");
-  
+
         String ref1 = servletRequest.getParameter("name");
         System.out.println("name:" + ref1);
 
