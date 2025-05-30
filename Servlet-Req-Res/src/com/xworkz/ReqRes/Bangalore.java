@@ -14,7 +14,7 @@ public class Bangalore extends GenericServlet {
         System.out.println("Bangalore created by Tomcat");
     }
 
-    @Override
+    @Override 
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
         System.out.println("Running service in Bangalore");
 
