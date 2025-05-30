@@ -12,7 +12,7 @@ public class Myself extends GenericServlet {
 
     public Myself() {
         System.out.println("Profile created by Tomcat");
-    }
+    } 
 
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
