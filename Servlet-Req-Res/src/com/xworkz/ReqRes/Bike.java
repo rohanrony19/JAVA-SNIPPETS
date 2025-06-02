@@ -41,7 +41,7 @@ public class Bike extends GenericServlet {
 
         String ref8 = servletRequest.getParameter("price");
         System.out.println("price: " + ref8);
- 
+
         String ref9 = servletRequest.getParameter("topSpeed");
         System.out.println("topSpeed: " + ref9);
 
