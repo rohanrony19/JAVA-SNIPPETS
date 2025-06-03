@@ -51,4 +51,4 @@ public class Temple extends GenericServlet {
         String ref11 = servletRequest.getParameter("entry");
         System.out.println("entry: " + ref11);
     }
-}  
+}
