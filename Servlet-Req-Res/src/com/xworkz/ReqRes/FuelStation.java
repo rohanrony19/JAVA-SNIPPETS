@@ -14,7 +14,6 @@ public class FuelStation extends GenericServlet {
         System.out.println("Hotel created by Tomcat");
     }
 
-
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
         System.out.println("Running service in Hotel");
