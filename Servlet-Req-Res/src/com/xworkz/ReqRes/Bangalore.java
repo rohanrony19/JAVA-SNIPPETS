@@ -52,7 +52,7 @@ public class Bangalore extends GenericServlet {
         System.out.println("parks: " + ref11);
 
         String ref12 = servletRequest.getParameter("education");
-        System.out.println("education: " + ref12);
+        System.out.println("education: " + ref12);  
 
         String ref13 = servletRequest.getParameter("companies");
         System.out.println("companies: " + ref13);
