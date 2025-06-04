@@ -10,7 +10,7 @@ import java.io.PrintWriter;
 
 @WebServlet(urlPatterns = "/Hotel",loadOnStartup = 2)
 public class Hotel extends GenericServlet {
-  
+
     public Hotel(){
         System.out.println("Hotel created by Tomcat");
     }
