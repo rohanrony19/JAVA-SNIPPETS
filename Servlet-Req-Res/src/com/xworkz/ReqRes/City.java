@@ -6,17 +6,18 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 @WebServlet(urlPatterns = "/City",loadOnStartup = 8)
-public class Bangalore extends GenericServlet {
+public class City extends GenericServlet {
 
-    public Bangalore() {
-        System.out.println("Bangalore created by Tomcat");
+    public City() {
+        System.out.println("City created by Tomcat");
     }
 
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
-        System.out.println("Running service in Bangalore");
+        System.out.println("Running service in City");
 
         String ref1 = servletRequest.getParameter("name");
         System.out.println("name: " + ref1);
@@ -68,6 +69,19 @@ public class Bangalore extends GenericServlet {
 
         String ref17 = servletRequest.getParameter("culture");
         System.out.println("culture: " + ref17);
+
+        PrintWriter printWriter= servletResponse.getWriter();
+        printWriter.write("<html>");
+        printWriter.write("<body>");
+        printWriter.write("<h1>");
+        printWriter.write("City info send success...");
+
+        printWriter.write("</h1>");
+
+        printWriter.write("</body>");
+
+        printWriter.write("</html>");
+
     }
 }
 
