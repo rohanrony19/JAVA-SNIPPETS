@@ -12,7 +12,7 @@ public class Temple extends GenericServlet {
 
     public Temple() {
         System.out.println("Temple created by Tomcat");
-    }
+    }   
 
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
