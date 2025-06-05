@@ -8,7 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 
 @WebServlet(urlPatterns = "/Country",loadOnStartup = 5)
-public class Country extends GenericServlet {  
+public class Country extends GenericServlet {
 
     public Country() {
         System.out.println("Country created by Tomcat");
