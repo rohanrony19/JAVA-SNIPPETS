@@ -9,7 +9,7 @@ import java.io.IOException;
 
 @WebServlet(urlPatterns = "/FuelStation", loadOnStartup = 3)
 public class FuelStation extends GenericServlet {
-
+   
     public FuelStation(){
         System.out.println("Hotel created by Tomcat");
     }
