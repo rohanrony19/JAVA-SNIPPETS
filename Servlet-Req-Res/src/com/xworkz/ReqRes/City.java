@@ -75,7 +75,7 @@ public class City extends GenericServlet {
         printWriter.write("<body>");
         printWriter.write("<h1>");
         printWriter.write("City info send success...");
-
+  
         printWriter.write("</h1>");
 
         printWriter.write("</body>");
