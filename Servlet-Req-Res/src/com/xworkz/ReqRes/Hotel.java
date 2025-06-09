@@ -53,6 +53,6 @@ public class Hotel extends GenericServlet {
         printWriter.write("</html>");
 
 
-
+   
     }
 }
