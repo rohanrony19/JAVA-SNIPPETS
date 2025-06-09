@@ -23,7 +23,7 @@ public class Movie extends GenericServlet {
 
         String ref2 = servletRequest.getParameter("hero");
         System.out.println("hero:" + ref2);
-   
+     
         String ref3 = servletRequest.getParameter("heroin");
         System.out.println("heroin:" + ref3);
 
