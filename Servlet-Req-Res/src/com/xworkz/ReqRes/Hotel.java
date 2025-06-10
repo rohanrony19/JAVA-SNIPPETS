@@ -35,7 +35,7 @@ public class Hotel extends GenericServlet {
         System.out.println("rating:"+ref5);
 
         String ref6 = servletRequest.getParameter("visits");
-        System.out.println("visits: "+ref6);
+        System.out.println("visits: "+ref6);   
 
         String ref7 = servletRequest.getParameter("views");
         System.out.println("views: " +ref7);
