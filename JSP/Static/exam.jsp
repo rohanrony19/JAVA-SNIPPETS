@@ -22,8 +22,8 @@
     </li>
 </ul>
 <center>
-    <h1>Registration Form</h1>
-    <form action="College" class="row g-3 needs-validation" novalidate>
+    <h1>Exam Application</h1>
+    <form action="exam" class="row g-3 needs-validation" novalidate>
         <div class="col-md-4 position-relative">
             <label for="validationTooltip01" class="form-label">Full Name</label>
             <input type="text" class="form-control" id="validationTooltip01" name="fullName" required>

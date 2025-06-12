@@ -23,7 +23,7 @@
 </ul>
 <center>
     <h1>Registration Form</h1>
-    <form action="College" class="row g-3 needs-validation" novalidate>
+    <form action="College" method="post">
         <div class="col-md-4 position-relative">
             <label for="validationTooltip01" class="form-label">Full Name</label>
             <input type="text" class="form-control" id="validationTooltip01" name="fullName" required>
@@ -48,24 +48,31 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 position-relative">
-            <label for="validationTool04" class="form-label">Previous College Name</label>
-            <input type="text" class="form-control" id="validationTool04" name="previouscol" required>
+        <div class="col-md-3 position-relative">
+            <label for="validationTooltip05" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" id="validationTooltip05" name="mobile" required>
+            <div class="invalid-tooltip">
+                Please provide a valid zip.
+            </div>
         </div>
         <div class="col-md-4 position-relative">
             <label for="validationTool5" class="form-label">Obtainted Marks</label>
             <input type="text" class="form-control" id="validationTool5" name="obtainedMarks" required>
         </div>
+        <div class="col-md-4 position-relative">
+            <label for="validationTool04" class="form-label">Previous College Name</label>
+            <input type="text" class="form-control" id="validationTool04" name="previouscol" required>
+        </div>
         <div class="col-md-6 position-relative">
             <label for="validationTooltip03" class="form-label">City</label>
-            <input type="text" class="form-control" id="validationTooltip03" required>
+            <input type="text" class="form-control" id="validationTooltip03" name="city" required>
             <div class="invalid-tooltip">
                 Please provide a valid city.
             </div>
         </div>
         <div class="col-md-3 position-relative">
             <label for="validationTooltip04" class="form-label">State</label>
-            <select class="form-select" id="validationTooltip04" required>
+            <select class="form-select" id="validationTooltip04" name="state" required>
                 <option selected disabled value="">Choose...</option>
                 <option>...</option>
             </select>
@@ -73,13 +80,7 @@
                 Please select a valid state.
             </div>
         </div>
-        <div class="col-md-3 position-relative">
-            <label for="validationTooltip05" class="form-label">Zip</label>
-            <input type="text" class="form-control" id="validationTooltip05" required>
-            <div class="invalid-tooltip">
-                Please provide a valid zip.
-            </div>
-        </div>
+
         <div class="col-12">
             <button class="btn btn-primary" type="submit">Submit form</button>
         </div>
