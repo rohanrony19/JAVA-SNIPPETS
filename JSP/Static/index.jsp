@@ -21,5 +21,10 @@
         <button class="nav-link" id="disabled-tab" type="button" ><a href="exam.jsp"> Exam Detail</a></button>
     </li>
 </ul>
+<center>
+    <h1>Welcome to PES UNIVERSITY</h1>
+    <img src="https://yt3.googleusercontent.com/6ajnI5Yv5wKcM9HSZCRk-9ICg7WgrdK2chc2a2wpADqoTBqlRVq8PSFzALcu1AA7phBhdCZl7Q=s900-c-k-c0x00ffffff-no-rj" height="500px" width="1000">
+    <img src="https://img.collegepravesh.com/2017/02/PESIT-BCS.jpg" height="">
+</center>
 </body>
 </html>
