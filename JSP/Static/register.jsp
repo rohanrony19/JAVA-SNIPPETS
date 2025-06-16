@@ -21,7 +21,7 @@
         <button class="nav-link" id="disabled-tab" type="button" ><a href="Exam.jsp"> Exam Detail</a></button>
     </li>
 </ul>
-<center>
+<center>  
 <h1>Registration Form</h1>
 <form action="Register" class="row g-3 needs-validation" novalidate>
     <div class="col-md-4 position-relative">
