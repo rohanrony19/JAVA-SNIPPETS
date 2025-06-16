@@ -20,7 +20,7 @@
     <li class="nav-item" role="presentation">
         <button class="nav-link" id="disabled-tab" type="button" ><a href="Exam.jsp"> Exam Detail</a></button>
     </li>
-</ul>
+</ul>  
 <center>
     <h1>Exam Application</h1>
     <form action="exam" class="row g-3 needs-validation" novalidate>
