@@ -31,7 +31,7 @@ public class collegeServlet extends HttpServlet {
         collegedto coldto = new collegedto();
         coldto.setFullName(fullName);
         coldto.setFatherName(fatherName);
-        coldto.setMotherName(motherName);
+        coldto.setMotherName(motherName);  
         coldto.setEmail(email);
         coldto.setMobile(Long.parseLong(mobile));
         coldto.setPreviouscol(previouscol);
