@@ -35,7 +35,7 @@
             <label for="validationTooltip02" class="form-label">Father Name</label>
             <input type="text" class="form-control" id="validationTooltip02" name="fatherName" required>
         </div>
-        <div class="col-md-4 position-relative">  
+        <div class="col-md-4 position-relative">
             <label for="validationTooltip3" class="form-label">Mother Name</label>
             <input type="text" class="form-control" id="validationTooltip3" name="motherName" required>
         </div>
