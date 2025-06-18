@@ -23,6 +23,10 @@ public class PatientDTO implements Serializable {
         this.mobile = mobile;
     }
 
+    public PatientDTO() {
+        System.out.println("NO args constructor");
+    }
+
     public String getFullname() {
         return fullname;
     }

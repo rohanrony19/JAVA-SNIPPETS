@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(urlPatterns = "/familydetails")
+@WebServlet(urlPatterns = "/family")
 public class InfoServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -24,6 +24,8 @@ public class InfoServlet extends HttpServlet {
         InfoDTO dto=new InfoDTO(name,fatherName,motherName,email,phoneNumber);
         InfoService infoService=new InfoServiceImpl();
         infoService.validate(dto);
+
+
 
         System.out.println(dto);
 
