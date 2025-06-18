@@ -9,7 +9,7 @@
 <body>
 <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="home-tab"  type="button"><a href="home.jsp">Home</a></button>
+        <button class="nav-link active" id="home-tab"  type="button"><a href="index.jsp">Home</a></button>
     </li>
     <li class="nav-item" role="presentation">
         <button class="nav-link" id="profile-tab" type="button" ><a href="patientdetail.jsp">Patient Details</a></button>
@@ -23,7 +23,7 @@
 </ul>
 <center>
     <h1>Registration Form</h1>
-    <form action="familydetails" method="post">
+    <form action="" method="post">
         <div class="col-md-4 position-relative">
             <label for="validationTooltip01" class="form-label">Full Name</label>
             <input type="text" class="form-control" id="validationTooltip01" name="fullName" required>

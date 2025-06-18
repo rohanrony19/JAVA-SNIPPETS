@@ -18,8 +18,7 @@ public class InfoDTO implements Serializable {
         this.phoneNumber = phoneNumber;
     }
 
-    public InfoDTO() {
-    }
+
 
     public String getName() {
         return name;
