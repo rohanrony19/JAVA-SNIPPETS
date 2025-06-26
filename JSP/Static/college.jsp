@@ -9,13 +9,13 @@
 <body>
 <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="home-tab"  type="button"><a href="home.jsp">Home</a></button>
+        <button class="nav-link active" id="home-tab"  type="button"><a href="Home">Home</a></button>
     </li>
     <li class="nav-item" role="presentation">
         <button class="nav-link" id="profile-tab" type="button" ><a href="register.jsp">Register</a></button>
     </li>
     <li class="nav-item" role="presentation">
-        <button class="nav-link" id="contact-tab"  type="button" ><a href="college.jsp"> College Info</a></button>
+        <button class="nav-link" id="contact-tab"  type="button" ><a href="Collegeee"> College Info</a></button>
     </li>
     <li class="nav-item" role="presentation">
         <button class="nav-link" id="disabled-tab" type="button" ><a href="Exam.jsp"> Exam Detail</a></button>
@@ -35,7 +35,7 @@
             <label for="validationTooltip02" class="form-label">Father Name</label>
             <input type="text" class="form-control" id="validationTooltip02" name="fatherName" required>
         </div>
-        <div class="col-md-4 position-relative">  
+        <div class="col-md-4 position-relative">
             <label for="validationTooltip3" class="form-label">Mother Name</label>
             <input type="text" class="form-control" id="validationTooltip3" name="motherName" required>
         </div>
