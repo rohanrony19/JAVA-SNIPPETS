@@ -27,21 +27,28 @@ public class collegeServlet extends HttpServlet {
         String city=req.getParameter("city");
         String state=req.getParameter("state");
 
-        //collegedto coldto = new collegedto(fullName,fatherName,motherName,email,mobile,Long.parseLong(previouscol),obtainedMarks,city,state);
-        collegedto coldto = new collegedto();
-        coldto.setFullName(fullName);
-        coldto.setFatherName(fatherName);
-        coldto.setMotherName(motherName);  
-        coldto.setEmail(email);
-        coldto.setMobile(Long.parseLong(mobile));
-        coldto.setPreviouscol(previouscol);
-        coldto.setObtainedMarks(obtainedMarks);
-        coldto.setCity(city);
-        coldto.setState(state);
-        System.out.println(coldto);
+        collegedto college = new collegedto(fullName,fatherName,motherName,email,mobile,Long.parseLong(previouscol),obtainedMarks,city,state);
+
+//        coldto.setFullName(fullName);
+//        coldto.setFatherName(fatherName);
+//        coldto.setMotherName(motherName);
+//        coldto.setEmail(email);
+//        coldto.setMobile(Long.parseLong(mobile));
+//        coldto.setPreviouscol(previouscol);
+//        coldto.setObtainedMarks(obtainedMarks);
+//        coldto.setCity(city);
+//        coldto.setState(state);
 
         collegeApplicationService collegeapplicationservice = new collegeApplicationImp();
-        collegeapplicationservice.collegeApplicationValidated(coldto);
+        String saved = collegeapplicationservice.collegeApplicationValidated(college);
+        System.out.println(college);
 
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("college.jsp"); // After submitting
+        if(saved.equalsIgnoreCase("success")){
+            req.setAttribute("msg","Form Submitted Successfully");
+        }else{
+            req.setAttribute("msg","Form Not Submitted");
+        }
+        requestDispatcher.forward(req,resp);
     }
 }
