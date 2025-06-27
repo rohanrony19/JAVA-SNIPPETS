@@ -12,7 +12,7 @@
         <button class="nav-link active" id="home-tab"  type="button"><a href="index.jsp">Home</a></button>
     </li>
     <li class="nav-item" role="presentation">
-        <button class="nav-link" id="profile-tab" type="button" ><a href="patientdetail.jsp">Patient Details</a></button>
+        <button class="nav-link" id="profile-tab" type="button" ><a href="patientPage">Patient Details</a></button>
     </li>
     <li class="nav-item" role="presentation">
         <button class="nav-link" id="contact-tab"  type="button" ><a href=""> College Info</a></button>

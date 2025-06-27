@@ -1,4 +1,4 @@
-<!doctype html>
+
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -12,7 +12,7 @@
         <button class="nav-link active" id="home-tab"  type="button"><a href="index.jsp">Home</a></button>
     </li>
     <li class="nav-item" role="presentation">
-        <button class="nav-link" id="profile-tab" type="button" ><a href="patientdetail.jsp">Patient Details</a></button>
+        <button class="nav-link" id="profile-tab" type="button" ><a href="patientPage">Patient Details</a></button>
     </li>
     <li class="nav-item" role="presentation">
         <button class="nav-link" id="contact-tab"  type="button" ><a href=""> College Info</a></button>
@@ -23,26 +23,27 @@
 </ul>
 <center>
     <h1>Registration Form</h1>
-    <form action="" method="post">
+    <h1>${success}</h1>
+    <form action="family" method="post">
         <div class="col-md-4 position-relative">
             <label for="validationTooltip01" class="form-label">Full Name</label>
-            <input type="text" class="form-control" id="validationTooltip01" name="fullName" required>
+            <input type="text" class="form-control" id="validationTooltip01" name="fullName" >
             <div class="valid-tooltip">
                 Looks good!
             </div>
         </div>
         <div class="col-md-4 position-relative">
             <label for="validationTooltip02" class="form-label">Father Name</label>
-            <input type="text" class="form-control" id="validationTooltip02" name="fatherName" required>
+            <input type="text" class="form-control" id="validationTooltip02" name="fatherName" >
         </div>
         <div class="col-md-4 position-relative">
             <label for="validationTooltip3" class="form-label">Mother Name</label>
-            <input type="text" class="form-control" id="validationTooltip3" name="motherName" required>
+            <input type="text" class="form-control" id="validationTooltip3" name="motherName" >
         </div>
         <div class="col-md-4 position-relative">
             <label for="validationTooltipUsername" class="form-label">Email</label>
             <div class="input-group has-validation">
-                <input type="email" class="form-control" id="validationTooltipUsername" name="email" required>
+                <input type="text" class="form-control" id="validationTooltipUsername" name="email" >
                 <div class="invalid-tooltip">
                     Please Enter the valid email.
                 </div>
@@ -50,7 +51,7 @@
         </div>
         <div class="col-md-3 position-relative">
             <label for="validationTooltip05" class="form-label">Phone Number</label>
-            <input type="text" class="form-control" id="validationTooltip05" name="mobile" required>
+            <input type="text" class="form-control" id="validationTooltip05" name="mobile" >
             <div class="invalid-tooltip">
                 Please provide a valid zip.
             </div>
