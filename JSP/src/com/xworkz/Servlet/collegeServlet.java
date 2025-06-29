@@ -26,7 +26,7 @@ public class collegeServlet extends HttpServlet {
         String obtainedMarks=req.getParameter("obtainedMarks");
         String city=req.getParameter("city");
         String state=req.getParameter("state");
- 
+   
         collegedto college = new collegedto(fullName,fatherName,motherName,email,mobile,Long.parseLong(previouscol),obtainedMarks,city,state);
 
 //        coldto.setFullName(fullName);
