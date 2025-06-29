@@ -23,7 +23,7 @@
 </ul>
 <center>
     <h1>Registration Form</h1>
-    <form action="Patient" method="post">
+    <form action="Patient" method="get">
         <div class="col-md-4 position-relative">
             <label for="validationTooltip01" class="form-label">Full Name</label>
             <input type="text" class="form-control" id="validationTooltip01" name="fullName" required>
