@@ -15,4 +15,4 @@ public class collegeInfo extends HttpServlet {
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("college.jsp");
         requestDispatcher.forward(req,res);
     }
-}
+}  
