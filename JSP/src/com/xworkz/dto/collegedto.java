@@ -12,7 +12,7 @@ public class collegedto implements Serializable {
     private String previouscol;
     private String city;
     private String state;
-
+    
     public collegedto(String fullName, String fatherName, String motherName, String email, String obtainedMarks, long mobile, String previouscol, String city, String state) {
         this.fullName = fullName;
         this.fatherName = fatherName;
