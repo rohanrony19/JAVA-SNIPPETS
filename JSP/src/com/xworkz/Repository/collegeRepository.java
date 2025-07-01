@@ -5,4 +5,3 @@ import com.xworkz.dto.collegedto;
 public interface collegeRepository {
     void save(collegedto dto);
 }
-  
