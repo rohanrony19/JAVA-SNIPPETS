@@ -5,7 +5,7 @@ import com.xworkz.Repository.collegeRepositoryImpl;
 import com.xworkz.dto.collegedto;
 
 public class collegeApplicationImp implements collegeApplicationService{
-
+ 
     @Override
     public String collegeApplicationValidated(collegedto college) {
         System.out.println("-------------");
