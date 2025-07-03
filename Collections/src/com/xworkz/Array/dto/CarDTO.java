@@ -6,7 +6,7 @@ public class CarDTO implements Serializable {
     private String name;
     private String brand;
     private String color;
-    private String type;
+    private String type;  
     private String capacity;
     private String number;
     private String owner;
