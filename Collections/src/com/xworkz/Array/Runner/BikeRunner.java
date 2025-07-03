@@ -23,7 +23,7 @@ public class BikeRunner {
         System.out.println("Bike Details:");
         for(BikeDTO bikeDTO : bike) {
             System.out.println("Differnt Type Of Bike Names:" + bikeDTO.getName());
-            System.out.println("");  
+            System.out.println("");   
             System.out.println("Brand Name: "+ bikeDTO.getBrand());
             System.out.println("");
             System.out.println("Bike Color: "+ bikeDTO.getColor());
