@@ -23,7 +23,7 @@ public class StudentRunner {
         Iterator<StudentDTO> students = student.iterator();
 
         System.out.println("Student Name: ");
-        while (students.hasNext()) {
+        while (students.hasNext()) {  
             StudentDTO studentDTO = students.next();
             System.out.println("Name : "+studentDTO.getName());
             System.out.println("Age : "+studentDTO.getAge());
