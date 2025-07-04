@@ -20,7 +20,7 @@ public class VehicleRunner {
         vehicles.add(new VehicleDTO("Royal Enfield", "Classic 350", "Bike", "Green", "Petrol", 349, "KA09UV9876", "Rohit", "Mangalore", 2023));
         vehicles.add(new VehicleDTO("Suzuki", "Access 125", "Scooter", "Blue", "Petrol", 124, "KA10WX6543", "Nisha", "Udupi", 2022));
         vehicles.add(new VehicleDTO("Kia", "Seltos", "Car", "White", "Petrol", 1493, "KA11YZ3210", "Meena", "Belgaum", 2021));
-
+  
 
         System.out.println("Vehicle Brand and Model:");
         Iterator<VehicleDTO> iterator1 = vehicles.iterator();
