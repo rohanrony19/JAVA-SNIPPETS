@@ -9,7 +9,7 @@ public class VehicleRunner {
 
     public static void main(String[] args) {
         Collection<VehicleDTO> vehicles = new HashSet<>();
-    
+
         vehicles.add(new VehicleDTO("Toyota", "Innova", "Car", "White", "Diesel", 2393, "KA02AB1234", "Manoj", "Bangalore", 2020));
         vehicles.add(new VehicleDTO("Honda", "Activa", "Scooter", "Black", "Petrol", 109, "KA03XY5678", "Sneha", "Mysore", 2022));
         vehicles.add(new VehicleDTO("Tata", "Nexon EV", "Car", "Blue", "Electric", 0, "KA04UV2345", "Rahul", "Hubli", 2023));
