@@ -144,7 +144,7 @@ public class Runner {
             collection.add("North Macedonia");
             collection.add("American Samoa");
             collection.add("Vietnam");
-            collection.add("China");  
+            collection.add("China");   
             collection.add("Kyrgyzstan");
             collection.add("Tanzania, United Republic of");
             collection.add("Puerto Rico");
