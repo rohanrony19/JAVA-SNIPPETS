@@ -1,5 +1,5 @@
 package com.xworkz.Runner;
-import com.xworkz.collection.dto.StudentDTO;
+import com.xworkz.dto.StudentDTO;
 
 import java.util.Collection;
 import java.util.HashSet;
