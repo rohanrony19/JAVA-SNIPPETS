@@ -1,4 +1,4 @@
-package com.xworkz.collection.dto;
+package com.xworkz.dto;
 
 import java.io.Serializable;
 
