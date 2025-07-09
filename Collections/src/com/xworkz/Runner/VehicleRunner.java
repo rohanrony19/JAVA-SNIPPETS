@@ -1,6 +1,5 @@
 package com.xworkz.Runner;
-import com.xworkz.collection.dto.VehicleDTO;
-
+import com.xworkz.dto.VehicleDTO;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
