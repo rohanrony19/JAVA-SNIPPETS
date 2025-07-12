@@ -8,7 +8,7 @@ public class SortArray {
     Arrays.sort(OriginalArrAsc);
     System.out.println(Arrays.toString(OriginalArrAsc));
 
-    int[] OriginalArrDesc = {1,5,3,7,2,6,4};  
+    int[] OriginalArrDesc = {1,5,3,7,2,6,4};
     Desc(OriginalArrDesc);
     System.out.println(Arrays.toString(OriginalArrDesc));
     }
