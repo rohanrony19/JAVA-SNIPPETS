@@ -9,7 +9,7 @@ public class LinearSearch {
             if (arr[i] == target) {
                 found = true;
                 System.out.println("Target in index = " + i);
-                break;
+                break; 
             }
         }
             if(!found)
