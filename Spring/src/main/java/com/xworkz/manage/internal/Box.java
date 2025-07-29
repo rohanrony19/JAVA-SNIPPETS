@@ -15,6 +15,6 @@ public class Box {
     public Box(String Tiffen,String Metal){
         this.Tiffen = Tiffen;
         this.Metal=Metal;
-        System.out.println("Box Constructor");  
+        System.out.println("Box Constructor");
     }
 }
