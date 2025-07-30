@@ -12,7 +12,7 @@ public class FootballRunner {
     EntityManagerFactory emf = Persistence.createEntityManagerFactory("football");
         EntityManager em = emf.createEntityManager();
         EntityTransaction et = em.getTransaction();
-        et.begin();
+        et.begin(); 
         FootballEntity footballEntity = new FootballEntity(1,"Real Madrid","Spain");
         em.persist(footballEntity);
         et.commit();
