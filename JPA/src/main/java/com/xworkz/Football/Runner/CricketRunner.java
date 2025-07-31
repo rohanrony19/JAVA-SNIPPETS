@@ -17,6 +17,7 @@ public class CricketRunner {
         et.begin();
         List<CricketEntity> list = new ArrayList<>();
         list.add(new CricketEntity());
+        list
         for (CricketEntity entity:list){
             em.persist(entity);
         }
