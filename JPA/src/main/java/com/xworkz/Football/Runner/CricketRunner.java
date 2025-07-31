@@ -15,10 +15,11 @@ public class CricketRunner {
         EntityManager em = emf.createEntityManager();
         EntityTransaction et = em.getTransaction();
         et.begin();
-//        List<CricketEntity> list = new ArrayList<>();
-//        for (CricketEntity entity:list){
-//            em.persist();
-//        }
-//        et.commit();
+        List<CricketEntity> list = new ArrayList<>();
+        list.add(new CricketEntity());
+        for (CricketEntity entity:list){
+            em.persist(entity);
+        }
+        et.commit();
     }
 }
