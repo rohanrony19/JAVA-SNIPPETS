@@ -1,5 +1,6 @@
 package com.xworkz.Football.Entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -10,6 +11,7 @@ public class CricketEntity {
     @Id
     private int id;
 
+    @Column(name="")
     private String teamName;
 
     private String country;
