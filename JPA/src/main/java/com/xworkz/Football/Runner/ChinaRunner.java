@@ -35,9 +35,9 @@ public class ChinaRunner {
 
         em.remove(10);
 //        chinaEntity.setCities("Huzuki");
-//        em.merge(chinaEntity); 
+//        em.merge(chinaEntity);
         et.commit();
-//        System.out.println(chinaEntity);
+//        System.out.println(chinaEntity); 
 
 //        for (ChinaEntity entity : chinaList) {
 //            ChinaEntity existing = em.find(ChinaEntity.class, 6);
