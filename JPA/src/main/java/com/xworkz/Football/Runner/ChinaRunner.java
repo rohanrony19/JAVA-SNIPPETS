@@ -37,7 +37,7 @@ public class ChinaRunner {
 //        chinaEntity.setCities("Huzuki");
 //        em.merge(chinaEntity);
         et.commit();
-//        System.out.println(chinaEntity); 
+//        System.out.println(chinaEntity);
 
 //        for (ChinaEntity entity : chinaList) {
 //            ChinaEntity existing = em.find(ChinaEntity.class, 6);
@@ -50,6 +50,5 @@ public class ChinaRunner {
 //            }
 //        }
 //        et.commit();
-
     }
 }
