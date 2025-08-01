@@ -34,5 +34,8 @@ public class FootballRunner {
 
 
         et.commit();
+
+        FootballEntity footballEntity=em.find(FootballEntity.class,7);
+        System.out.println(footballEntity);
     }
 }
