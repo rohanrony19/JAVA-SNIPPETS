@@ -10,8 +10,8 @@ public class Box {
     private String Tiffen;
 
     private String Metal;
- 
-    @Bean
+
+
     public Box(String Tiffen,String Metal){
         this.Tiffen = Tiffen;
         this.Metal=Metal;
