@@ -19,8 +19,8 @@ public class Cap {
     @Autowired
     public String Metal;
 
-    @Autowired
-    public Box box;
+//    @Autowired
+//    public Box box;
 
 
 }
