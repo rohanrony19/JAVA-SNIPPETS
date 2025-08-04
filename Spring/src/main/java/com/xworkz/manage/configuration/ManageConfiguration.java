@@ -16,7 +16,7 @@ public class ManageConfiguration  {
     public ManageConfiguration(){
         System.out.println("running manageConfiguration");
     }
- 
+
     @Bean//custom class (.java/.class)
     String getMail(){
 
