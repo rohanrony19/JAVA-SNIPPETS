@@ -5,8 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Box {
-
- 
+    
     private String Tiffen;
 
     private String Metal;
