@@ -47,7 +47,7 @@ public class ChinaRunner {
 //                existing.setCities("Huzuki");
 //                em.merge(entity);   // Or update existing if needed
 //
-//            }
+//            }  
 //        }
 //        et.commit();
     }
