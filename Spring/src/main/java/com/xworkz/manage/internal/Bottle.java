@@ -9,7 +9,7 @@ public class Bottle {
 
 
     @Autowired
-    Cap cap; 
+    Cap cap;
 
     @Autowired
     String mail;//shriharshaKm10@gmail.com
