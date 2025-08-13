@@ -20,10 +20,10 @@ public class CarServiceImpl implements CarService{
         return new CarRepositoryImpl().FindById(2);
     }
 
-//    @Override
-//    public CarEntity getEntityByName(String Name) {
-//
-//        return new CarRepositoryImpl().UpdateById("Porche");
-//    }
+    @Override
+    public CarEntity getEntityByName(String Name) {
+
+        return new CarRepositoryImpl().UpdateById("Porche");
+    }
 }
 }
