@@ -2,80 +2,102 @@ package com.xworkz.Vehicle.Repository;
 
 import com.xworkz.Vehicle.Entity.CarEntity;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
-import javax.persistence.Persistence;
+import javax.persistence.*;
+import java.util.Collections;
+import java.util.List;
 
 public class CarRepositoryImpl implements CarRepository{
+    EntityManagerFactory emf = null;
     @Override
-    public String save(CarEntity car) {
-        System.out.println("running save");
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("car");
+    public boolean save(CarEntity car) {
 
         EntityManager em = null;
         EntityTransaction et = null;
+        emf = Persistence.createEntityManagerFactory("car");
         em = emf.createEntityManager();
         et = em.getTransaction();
         et.begin();
         em.persist(car);
-        if(et.isActive()){
-            et.rollback();
-        }
-        return null;
-    }
-
-    @Override
-    public CarEntity FindById(int id) {
-        System.out.println("running FindById");
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("car");
-
-        EntityManager em = emf.createEntityManager();
-        EntityTransaction et = em.getTransaction();
-        CarEntity carEntity1 = em.find(CarEntity.class,id);
-        if(et.isActive()){
-            et.rollback();
-        }
-        return carEntity1;
-    }
-
-    @Override
-    public CarEntity UpdateById(int id, String carName) {
-        System.out.println("running UpdateById");
-        EntityManagerFactory emf;
-        EntityManager em;
-        EntityTransaction et;
-        emf = Persistence.createEntityManagerFactory("car");
-        em = emf.createEntityManager();
-        et = em.getTransaction();
-        et.begin();
-        CarEntity carEntity2 = em.find(CarEntity.class,id);
-        carEntity2.setCarName(carName);
-        em.merge(carEntity2);
         et.commit();
-        return carEntity2;
-//        if (et.isActive()){
-//            et.rollback();
-//        }
-//        return null;
+        return true;
     }
 
     @Override
-    public CarEntity DeleteById(int id) {
-        System.out.println("running deleteById");
-        EntityManagerFactory emf = null;
+    public CarEntity getById(int id) {
         EntityManager em = null;
         EntityTransaction et = null;
         emf = Persistence.createEntityManagerFactory("car");
         em = emf.createEntityManager();
         et = em.getTransaction();
         et.begin();
-        CarEntity carEntity3 = em.find(CarEntity.class,id);
-        em.remove(carEntity3);
-        et.commit();
-        if(et.isActive()){
-            et.rollback();
+        CarEntity carEntity = em.find(CarEntity.class,id);
+
+        return carEntity;
+    }
+
+    @Override
+    public List<CarEntity>  getByName(String name) {
+
+        EntityManager em = null;
+        EntityTransaction et = null;
+        List<CarEntity> carEntities =null;
+
+        try {
+            emf = Persistence.createEntityManagerFactory("car");
+            em = emf.createEntityManager();
+            et = em.getTransaction();
+            et.begin();
+            Query query = em.createNamedQuery("EntityByName");
+            query.setParameter("Name",name);
+             carEntities =  (List<CarEntity>) query.getResultList();
+
+
+
+
+            et.commit();
+
+
+        } catch (Exception e) {
+            System.out.println("no data found");
+            if (et.isActive()){
+                et.rollback();
+            }
+                e.printStackTrace();
         }
-        return null;
+        finally {
+            em.close();
+
+        }
+        return carEntities;
+    }
+
+    @Override
+    public List<CarEntity> getByNameAndType(String name, String type) {
+        EntityManager em = null;
+        EntityTransaction et = null;
+        List<CarEntity> carEntities =null;
+        try {
+            emf = Persistence.createEntityManagerFactory("car");
+            em = emf.createEntityManager();
+            et = em.getTransaction();
+            et.begin();
+            Query query = em.createNamedQuery("EntityByNameAndType");
+            query.setParameter("name", name);
+            query.setParameter("type", type);
+            carEntities = (List<CarEntity>) query.getResultList();
+            et.commit();
+        }
+        catch (Exception e) {
+            System.out.println("no data found");
+            if (et.isActive()){
+                et.rollback();
+            }
+            e.printStackTrace();
+        }
+        finally {
+            em.close();
+
+        }
+        return carEntities;
     }
 }

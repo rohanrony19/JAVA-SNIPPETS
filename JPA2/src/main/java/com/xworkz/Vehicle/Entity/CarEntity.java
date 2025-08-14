@@ -11,10 +11,10 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Entity
 @Table(name = "cars")
-@NamedQuery(name="EntityByName",query = "select entity from CarEntity entity where entity.name =:Name ")
-@NamedQuery(name="EntityByNameAndType",query = "select entity from CarEntity entity where entity.name =:name and entity.type =: type ")
-@NamedQuery(name="EntityByNameAndColor",query = "select entity from CarEntity entity where entity.name =:name and entity.color=:color ")
-@NamedQuery(name="EntityByPrice",query = "select entity from CarEntity entity where entity.price =: price ")
+@NamedQuery(name="EntityByName",query = "select entity from CarEntity entity where entity.carName =: Name ")
+@NamedQuery(name="EntityByNameAndType",query = "select entity from CarEntity entity where entity.carName =:name and entity.carType =: type ")
+//@NamedQuery(name="EntityByNameAndColor",query = "select entity from CarEntity entity where entity.name =:name and entity.color=:color ")
+//@NamedQuery(name="EntityByPrice",query = "select entity from CarEntity entity where entity.price =: price ")
 
 public class CarEntity {
     @Id
