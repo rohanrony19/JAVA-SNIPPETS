@@ -9,5 +9,7 @@ public interface CarRepository {
     CarEntity getById(int id);
     List<CarEntity>  getByName(String name);
     List<CarEntity> getByNameAndType(String name,String type);
+    List<CarEntity> getBYNameAndColor(String name,String color);
+    List<CarEntity> getByPrice(int price);
 
 }

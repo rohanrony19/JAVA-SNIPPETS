@@ -13,8 +13,8 @@ import javax.persistence.*;
 @Table(name = "cars")
 @NamedQuery(name="EntityByName",query = "select entity from CarEntity entity where entity.carName =: Name ")
 @NamedQuery(name="EntityByNameAndType",query = "select entity from CarEntity entity where entity.carName =:name and entity.carType =: type ")
-//@NamedQuery(name="EntityByNameAndColor",query = "select entity from CarEntity entity where entity.name =:name and entity.color=:color ")
-//@NamedQuery(name="EntityByPrice",query = "select entity from CarEntity entity where entity.price =: price ")
+@NamedQuery(name="EntityByNameAndColor",query = "select entity from CarEntity entity where entity.carName =:name and entity.carColor=:color ")
+@NamedQuery(name="EntityByPrice",query = "select entity from CarEntity entity where entity.carPrice =: price ")
 
 public class CarEntity {
     @Id
