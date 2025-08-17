@@ -5,10 +5,11 @@ import com.xworkz.Vehicle.Entity.CarEntity;
 import java.util.List;
 
 public interface CarService {
-    String save(CarEntity carEntity);
-    CarEntity getEntityById(int id);
-    CarEntity getEntityByName(String Name);
-    CarEntity getEntityByNameAndType(String name, String type);
-    CarEntity getEntityByNameAndColor(String name, String color);
-    List<CarEntity> getEntitiesByPrice(int price);
+    boolean save(CarEntity car);
+   CarEntity getById(int id);
+    List<CarEntity> getByName(String name);
+    List<CarEntity> getByNameAndType(String name,String type);
+    List<CarEntity> getByNameAndColor(String name,String color);
+    List<CarEntity> getByPrice(int price);
+
 }
