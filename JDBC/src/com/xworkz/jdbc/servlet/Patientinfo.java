@@ -4,6 +4,7 @@ import com.xworkz.jdbc.dto.PatientDTO;
 import com.xworkz.jdbc.service.PatientService;
 import com.xworkz.jdbc.service.PatientServiceImpl;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,7 +15,8 @@ import java.io.IOException;
 @WebServlet(urlPatterns = "/Patient")
 public class Patientinfo extends HttpServlet {
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         String fullname=req.getParameter("fullName");
         String appointment=req.getParameter("appointment");
         String bloodgroup=req.getParameter("bloodgroup");
@@ -25,9 +27,18 @@ public class Patientinfo extends HttpServlet {
         long mobile=Long.parseLong(req.getParameter("mobile"));
 
         PatientDTO patientDTO=new PatientDTO(fullname,appointment,bloodgroup,age,gender,Appointmentfor,email,mobile);
+
         PatientService patientService=new PatientServiceImpl();
+
         patientService.validate(patientDTO);
 
         System.out.println(patientDTO);
+
+
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("success.jsp");
+
+        req.setAttribute("msg","Data submitted");
+
+        requestDispatcher.forward(req,resp);
     }
 }

@@ -18,9 +18,12 @@ public class PatientRepoImpl implements PatientRepo{
             String name="root";
             String password="REMOVED";
             Connection connection= DriverManager.getConnection(url,name,password);
+
             Statement statement=connection.createStatement();
+
             String sql = "insert into patient_details values(0,'"+patientDTO.getFullname()+"','"+patientDTO.getAppointment()+"','"+patientDTO.getBloodgroup()+"','"+patientDTO.getAge()+"','"+patientDTO.getGender()+"','"+patientDTO.getAppointmentfor()+"','"+patientDTO.getEmail()+"','"+patientDTO.getMobile()+"')";
-            statement.execute(sql);
+
+            boolean execute = statement.execute(sql);
 
         } catch (ClassNotFoundException | SQLException e) {
             throw new RuntimeException(e);

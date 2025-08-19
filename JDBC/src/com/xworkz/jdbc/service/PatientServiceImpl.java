@@ -5,6 +5,7 @@ import com.xworkz.jdbc.repository.PatientRepo;
 import com.xworkz.jdbc.repository.PatientRepoImpl;
 
 public class PatientServiceImpl implements PatientService{
+
     @Override
     public void validate(PatientDTO patientDTO) {
         if (patientDTO!= null){
