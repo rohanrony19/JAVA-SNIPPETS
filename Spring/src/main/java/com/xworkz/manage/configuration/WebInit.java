@@ -9,7 +9,7 @@ public class WebInit extends AbstractAnnotationConfigDispatcherServletInitialize
     protected String[] getServletMappings() {
         return new String[0];
     }
-  
+
     @Override
     protected Class<?>[] getRootConfigClasses() {
         return new Class[]{ManageConfiguration.class};
