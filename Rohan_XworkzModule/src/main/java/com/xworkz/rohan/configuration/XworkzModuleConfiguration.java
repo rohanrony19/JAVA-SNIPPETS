@@ -1,0 +1,43 @@
+package com.xworkz.rohan.configuration;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
+
+@Configuration
+@ComponentScan(basePackages = "com.xworkz.rohan")
+public class XworkzModuleConfiguration implements WebMvcConfigurer {
+
+    public XworkzModuleConfiguration(){
+        System.out.println("XworkzConfiguration___________________");
+    }
+
+    @Override
+    public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configure) {
+        configure.enable();
+    }
+
+    @Bean
+    public InternalResourceViewResolver viewResolver(){
+        return new InternalResourceViewResolver("/",".jsp");
+    }
+    @Bean
+    public PasswordEncoder passwordEncoder(){
+        return new BCryptPasswordEncoder();
+    }
+
+//    @Bean
+//    public BCryptPasswordEncoder bCryptPasswordEncoder(){
+//        return new BCryptPasswordEncoder();
+//    }
+
+    public void addResourceHandler(ResourceHandlerRegistry registry){
+        registry.addResourceHandler("/resources/**").addResourceLocations("classpath:/static/","classpath:/public/","/resources/");
+    }
+}
