@@ -1,7 +1,7 @@
 package com.xworkz.External;
 
 import com.xworkz.Internal.Bottle;
-import com.xworkz.Internal.Customer;
+//import com.xworkz.Internal.Customer;
 
 public class CustomerRunner {
     public static void main(String[] args) {
@@ -13,7 +13,7 @@ public class CustomerRunner {
 //            return false;
 //        };
         Customer customer = new Customer();
-//        customer.buy(bottle);
+        customer.buy(bottle);
         customer.buy((int num)->num>0);
     }
 }
