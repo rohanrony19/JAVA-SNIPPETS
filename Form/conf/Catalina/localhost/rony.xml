@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context docBase="C:\Users\rohan\OneDrive\Documents\JAVA-SNIPPETS\JAVA-SNIPPETS\Form\Webapps">
+  <Resources cacheMaxSize="10240">
+    <PostResources base="C:/Users/rohan/Downloads/apache-tomcat-9.0.38-windows-x64 (1)/apache-tomcat-9.0.38/lib/servlet-api.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/servlet-api.jar"/>
+  </Resources>
+</Context>
