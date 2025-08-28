@@ -26,7 +26,7 @@ public class XworkzModuleConfiguration implements WebMvcConfigurer {
     @Bean
     public InternalResourceViewResolver viewResolver(){
         return new InternalResourceViewResolver("/",".jsp");
-    }
+    }  
     @Bean
     public PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
