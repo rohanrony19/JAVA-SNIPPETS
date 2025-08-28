@@ -15,7 +15,6 @@
                 <input type="text" id="name" class="form-control" ><br/><br/>
                 <label for="password" class="col-form-label">password: <span style="color:red">*</span></label>
                 <input type="password" id="password" class="form-control" ><br/><br/>
-
             </div>
             <div>
                 <button style="color:green" onclick="submit">Submit</button>
