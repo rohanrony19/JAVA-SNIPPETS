@@ -55,7 +55,7 @@ public class SignUpController extends HttpServlet {
                 RequestDispatcher requestDispatcher = req.getRequestDispatcher("SignUp.jsp");
                 requestDispatcher.forward(req,resp);
             }
-        }
+        } 
         else {
             RequestDispatcher requestDispatcher = req.getRequestDispatcher("Autowired.jsp");
             requestDispatcher.forward(req,resp);
