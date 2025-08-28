@@ -4,7 +4,7 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 
 public class XworkzModuleInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
     public XworkzModuleInitializer(){
-        System.out.println("XworkzModuleInitializer.................");
+        System.out.println("XworkzModuleInitializer................");
     }
 
     @Override
