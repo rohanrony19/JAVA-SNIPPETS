@@ -23,7 +23,7 @@ public class RegisterController {
 
     @RequestMapping("/register")
     public ModelAndView registerForm(@Valid RegisterDTO registerDTO, BindingResult result,ModelAndView modelAndView){
-        modelAndView.setViewName("signUp");
+        modelAndView.setViewName("SignUp.jsp");
 
         if(result.hasErrors()){
             modelAndView.addObject("errors",result.getAllErrors());
