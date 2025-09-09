@@ -12,7 +12,7 @@ public class LargestSmallestDigit {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-
+ 
         int largest = arr[0];
         int smallest = arr[0];
         for (int i = 1; i < arr.length; i++) {
