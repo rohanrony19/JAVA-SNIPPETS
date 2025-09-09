@@ -12,4 +12,4 @@ public class ReverseWord {
         System.out.println("Original: " + name);
         System.out.println("Reversed: " + result.toString().trim());
     }
-}  
+}   
