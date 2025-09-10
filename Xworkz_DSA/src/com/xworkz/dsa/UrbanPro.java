@@ -21,7 +21,7 @@ public class UrbanPro {
 //        Set<Integer> duplicates =
 //                list.stream().filter(i-> Collections.frequency(list,i)>1).collect(Collectors.toSet());
 //        System.out.println("Duplicate elements: " + duplicates);
-
+ 
 //        O(n)
         int[] arr= {1, 3, 4, 2, 3, 6, 4, 5 ,4 ,2};
         Map<Integer,Integer> freq = new HashMap<>();
