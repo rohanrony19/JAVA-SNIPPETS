@@ -15,7 +15,7 @@ public class UrbanPro {
 //                }
 //            }
 //        }
-        
+
 //        Integer[] arr= {1, 3, 4, 2, 3, 6, 4, 5};             O(n^2)
 //        List<Integer> list = Arrays.asList(arr);
 //        Set<Integer> duplicates =
@@ -23,7 +23,7 @@ public class UrbanPro {
 //        System.out.println("Duplicate elements: " + duplicates);
 
 //        O(n)
-        int[] arr= {1, 3, 4, 2, 3, 6, 4, 5,4,2};
+        int[] arr= {1, 3, 4, 2, 3, 6, 4, 5 ,4 ,2};
         Map<Integer,Integer> freq = new HashMap<>();
         Set<Integer> duplicates = new HashSet<>();
         for (int num:arr){
