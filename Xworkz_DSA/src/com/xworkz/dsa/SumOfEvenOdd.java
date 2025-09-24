@@ -15,7 +15,7 @@ public class SumOfEvenOdd {
             }else{
                 odd += i;
             }
-        }  
+        }
 
         System.out.println("Sum of Even Numbers from 0 to " + sum + " is: " + even);
         System.out.println("Sum of Odd Numbers from 0 to " + sum + " is: " + odd);
