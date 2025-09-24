@@ -25,6 +25,5 @@ public class LargestSmallestDigit {
         }
         System.out.println("Largest Number: " +largest);
         System.out.println("Smallest Number: "+smallest);
-
     }
 }
